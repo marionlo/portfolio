@@ -51,12 +51,13 @@ header {
   font-weight: 800;
   font-size: 16px;
   text-align: start;
+
 }
 
-.button-nav {
+.button-nav{
   position: relative;
-  color: #EAC67A;
-  text-decoration: none;
+ color: #EAC67A;
+ text-decoration: none;
 }
 
 .button-nav:hover {
@@ -68,7 +69,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: -10px;
+   bottom: -10px;
   left: 0;
   background-color: #EAC67A;
   visibility: hidden;
@@ -113,5 +114,5 @@ header {
 }
 
 #typed-front {
-  color: #EAC67A;
+    color: #EAC67A;
 }
