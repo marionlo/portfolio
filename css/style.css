@@ -1,3 +1,5 @@
+/* GENERAL */
+
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Barlow|Dosis');
 * {
   font-family: 'Barlow', sans-serif;
@@ -15,6 +17,18 @@ html, body {
 a {
   text-decoration: none;
 }
+
+h1 {
+  color: #EAC67A;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* FIRST SECTION - HOME */
 
 .logo {
   height: 100px;
@@ -148,3 +162,5 @@ header {
     -webkit-transform: scale(1);
   }
 }
+
+/* SECOND SECTION - ABOUT ME */
