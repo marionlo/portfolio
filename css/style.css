@@ -51,13 +51,12 @@ header {
   font-weight: 800;
   font-size: 16px;
   text-align: start;
-
 }
 
-.button-nav{
+.button-nav {
   position: relative;
- color: #EAC67A;
- text-decoration: none;
+  color: #EAC67A;
+  text-decoration: none;
 }
 
 .button-nav:hover {
@@ -69,7 +68,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-   bottom: -10px;
+  bottom: -10px;
   left: 0;
   background-color: #EAC67A;
   visibility: hidden;
@@ -114,5 +113,38 @@ header {
 }
 
 #typed-front {
-    color: #EAC67A;
+  color: #EAC67A;
+}
+
+/* Button next section */
+
+.scroll {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.fa-angle-down {
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 60px;
+  -webkit-animation: bounce 1s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation: bounce 1s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+/* pulse animation */
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
 }
