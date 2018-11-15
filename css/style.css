@@ -1,8 +1,7 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Barlow|Dosis');
+@import url('https://fonts.googleapis.com/css?family=Ranga|Barlow|Dosis');
 * {
-  font-family: 'Barlow', sans-serif;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11,21 +10,26 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #233237;
+  background-color: whitesmoke;
 }
 
 a {
   text-decoration: none;
 }
 
+p {
+  font-family: 'Barlow', sans-serif;
+}
+
 h1 {
-  color: #EAC67A;
+  color: #A38A55;
   letter-spacing: normal;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 34px;
+  font-size: 46px;
   text-align: center;
   padding-top: 40px;
+  font-family: 'Ranga', cursive;
 }
 
 /* FIRST SECTION - HOME */
@@ -56,6 +60,7 @@ header {
   align-content: center;
   padding-bottom: :40px;
   margin-top: 40px;
+  font-family: 'Barlow', sans-serif;
 }
 
 .button-nav {
@@ -119,6 +124,7 @@ header {
 #typed {
   color: whitesmoke;
   font-size: 50px;
+  font-family: 'Barlow', sans-serif;
 }
 
 .typed-cursor {
@@ -164,3 +170,30 @@ header {
 }
 
 /* SECOND SECTION - ABOUT ME */
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  padding-top:60px;
+}
+
+h2 {
+  font-size:34px;
+  color: #EAC67A;
+   font-style: italic;
+   padding-bottom: 10px;
+   font-family: 'Barlow', sans-serif;
+}
+
+.about-text {
+  color: black;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#profile-img {
+  height: 700px;
+  margin-right:20px;
+  border-radius: 10px;
+
+}
