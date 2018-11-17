@@ -171,11 +171,17 @@ header {
 
 /* SECOND SECTION - ABOUT ME */
 
+#about-section {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 .aboutme {
   display: flex;
   justify-content: center;
-  padding-top:60px;
+  padding-top: 80px;
 }
+
 
 h2 {
   font-size:34px;
@@ -185,6 +191,13 @@ h2 {
    font-family: 'Barlow', sans-serif;
 }
 
+h3 {
+  color: #EAC67A;
+   font-style: italic;
+   font-family: 'Barlow', sans-serif;
+   font-size:24px;
+}
+
 .about-text {
   color: black;
     margin-left: 20px;
@@ -192,8 +205,19 @@ h2 {
 }
 
 #profile-img {
-  height: 700px;
+  max-height: 600px;
+  max-width:100%;
   margin-right:20px;
   border-radius: 10px;
 
+}
+
+.about-skills {
+  display: flex;
+  justify-content:space-around;
+  padding-top:50px;
+}
+
+.about-category {
+  width: 25%;
 }
