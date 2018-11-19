@@ -226,3 +226,13 @@ h3 {
   color: #a7aaaf;
   font-size: 18px;
 }
+
+.picto-skills {
+  padding-top:100px;
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
