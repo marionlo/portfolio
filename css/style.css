@@ -182,40 +182,38 @@ header {
   padding-top: 80px;
 }
 
-
 h2 {
-  font-size:34px;
+  font-size: 34px;
   color: #EAC67A;
-   font-style: italic;
-   padding-bottom: 10px;
-   font-family: 'Barlow', sans-serif;
+  font-style: italic;
+  padding-bottom: 10px;
+  font-family: 'Barlow', sans-serif;
 }
 
 h3 {
   color: #EAC67A;
-   font-style: italic;
-   font-family: 'Barlow', sans-serif;
-   font-size:24px;
+  font-style: italic;
+  font-family: 'Barlow', sans-serif;
+  font-size: 24px;
 }
 
 .about-text {
   color: black;
-    margin-left: 60px;
-    font-size: 20px;
+  margin-left: 60px;
+  font-size: 20px;
 }
 
 #profile-img {
   max-height: 600px;
-  max-width:100%;
-  margin-right:20px;
+  max-width: 100%;
+  margin-right: 20px;
   border-radius: 10px;
-
 }
 
 .about-skills {
   display: flex;
-  justify-content:space-around;
-  padding-top:50px;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 
 .about-category {
@@ -228,11 +226,50 @@ h3 {
 }
 
 .picto-skills {
-  padding-top:100px;
+  padding-top: 100px;
   text-align: center;
   font-size: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
 
+.fa-html5 {
+  color: #e34f26;
+}
+
+.fa-css3-alt {
+  color: #425cf4;
+}
+
+.fa-js-square {
+  color: #f7df1e;
+}
+
+.fa-react {
+  color: #00d8ff;
+}
+
+.fa-angular {
+  color: #b52e31;
+}
+
+.fa-npm {
+  color: #cb3837;
+}
+
+.fa-sass {
+  color: #c69;
+}
+
+.fa-gulp {
+  color: #DB4446;
+}
+
+.fa-git-square {
+  color: #3E2C00;
+}
+
+.fa-github {
+  color: #4078c0;
 }
