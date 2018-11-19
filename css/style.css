@@ -200,7 +200,7 @@ h3 {
 
 .about-text {
   color: black;
-    margin-left: 20px;
+    margin-left: 60px;
     font-size: 20px;
 }
 
@@ -220,4 +220,9 @@ h3 {
 
 .about-category {
   width: 25%;
+}
+
+.cat-description {
+  color: #a7aaaf;
+  font-size: 18px;
 }
