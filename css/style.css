@@ -273,3 +273,55 @@ h3 {
 .picto-skills .fa-github {
   color: #4078c0;
 }
+
+
+
+/* FORM */
+
+form {
+
+  width:1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-family: 'Barlow', sans-serif;
+}
+
+form p {
+  font-weight: bold;
+  color:#6c6c6d;
+  font-size:20px;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+label {
+  font-size:16px;
+  color:#5a5b5b;
+}
+
+input {
+  margin-bottom:20px;
+  padding: 10px;
+  border-radius:5px;
+  border: 1px solid #d5dbe2;
+}
+
+button {
+  border-radius:5px;
+  border: 1px solid #EAC67A;
+  background-color: #EAC67A;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height:40px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #A38A55;
+  border: 1px solid #A38A55;
+}
