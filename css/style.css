@@ -316,8 +316,11 @@ button {
   color: white;
   font-family: 'Roboto', sans-serif;
   height:40px;
+  width: 200px;
+  margin: 0 auto;
   text-transform: uppercase;
   transition: all 0.5s;
+  font-size: 18px;
 }
 
 button:hover {
