@@ -314,7 +314,7 @@ button {
   border: 1px solid #EAC67A;
   background-color: #EAC67A;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow', sans-serif;
   height:40px;
   width: 200px;
   margin: 0 auto;
@@ -327,4 +327,37 @@ button:hover {
   cursor: pointer;
   background-color: #A38A55;
   border: 1px solid #A38A55;
+}
+
+
+
+
+
+.portfolio p {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.portfolio-row {
+  display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px 60px 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-project {
+
+  -webkit-box-shadow: 3px 2px 17px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 2px 17px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 2px 17px 1px rgba(0,0,0,0.75);
+}
+
+
+.portfolio-project img {
+  max-width: 450px;
 }
