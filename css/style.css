@@ -358,6 +358,35 @@ button:hover {
 }
 
 
-.portfolio-project img {
-  max-width: 450px;
+.grid-container img {
+  width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+
+.grid-container * {
+ position: relative;
+}
+
+.grid-container *:after {
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  grid-row-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". . ." ". . ." ". . .";
+  margin-top: 50px;
+  min-width: 80%;
+  margin: 50px auto;
+  height: 100%;
 }
