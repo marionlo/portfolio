@@ -1,6 +1,6 @@
 /* GENERAL */
-
 @import url('https://fonts.googleapis.com/css?family=Ranga|Barlow|Dosis');
+
 * {
   list-style: none;
   margin: 0;
@@ -33,7 +33,6 @@ h1 {
 }
 
 /* FIRST SECTION - HOME */
-
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -137,7 +136,6 @@ header {
 }
 
 /* Button next section */
-
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -156,21 +154,21 @@ header {
 }
 
 /* pulse animation */
-
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.4);
   }
+
   100% {
     -webkit-transform: scale(1);
   }
 }
 
 /* SECOND SECTION - ABOUT ME */
-
 #about-section {
   margin: 0 auto;
   max-width: 1600px;
@@ -274,13 +272,9 @@ h3 {
   color: #4078c0;
 }
 
-
-
 /* FORM */
-
 form {
-
-  width:1000px;
+  width: 1000px;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -291,31 +285,31 @@ form {
 
 form p {
   font-weight: bold;
-  color:#6c6c6d;
-  font-size:20px;
+  color: #6c6c6d;
+  font-size: 20px;
   padding-bottom: 50px;
   padding-top: 80px;
 }
 
 label {
-  font-size:16px;
-  color:#5a5b5b;
+  font-size: 16px;
+  color: #5a5b5b;
 }
 
 input {
-  margin-bottom:20px;
+  margin-bottom: 20px;
   padding: 10px;
-  border-radius:5px;
+  border-radius: 5px;
   border: 1px solid #d5dbe2;
 }
 
 button {
-  border-radius:5px;
+  border-radius: 5px;
   border: 1px solid #EAC67A;
   background-color: #EAC67A;
   color: white;
   font-family: 'Barlow', sans-serif;
-  height:40px;
+  height: 40px;
   width: 200px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -329,10 +323,6 @@ button:hover {
   border: 1px solid #A38A55;
 }
 
-
-
-
-
 .portfolio p {
   color: black;
   text-align: center;
@@ -342,38 +332,39 @@ button:hover {
 
 .portfolio-row {
   display: flex;
-    justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 50px 60px 20px 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 50px 60px 20px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .portfolio-project {
-
-  -webkit-box-shadow: 3px 2px 17px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 2px 17px 1px rgba(0,0,0,0.75);
-  box-shadow: 3px 2px 17px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 2px 17px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 17px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 17px 1px rgba(0, 0, 0, 0.75);
 }
-
 
 .grid-container img {
   width: 100%;
-    max-width: 450px;
-    height: auto;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
 }
 
-
 .grid-container * {
- position: relative;
+  position: relative;
 }
 
 .grid-container *:after {
- content:attr(class);
- position: absolute;
- top: 0;
- left: 0;
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .grid-container {
@@ -384,7 +375,7 @@ button:hover {
   grid-row-gap: 2em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". . ." ". . ." ". . .";
+  grid-template-areas: ". . ."". . ."". . .";
   margin-top: 50px;
   min-width: 80%;
   margin: 50px auto;
