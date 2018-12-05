@@ -1,6 +1,6 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css?family=Ranga|Barlow|Dosis');
 
+@import url('https://fonts.googleapis.com/css?family=Ranga|Barlow|Dosis');
 * {
   list-style: none;
   margin: 0;
@@ -33,6 +33,7 @@ h1 {
 }
 
 /* FIRST SECTION - HOME */
+
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -136,6 +137,7 @@ header {
 }
 
 /* Button next section */
+
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -154,21 +156,21 @@ header {
 }
 
 /* pulse animation */
+
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: scale(1);
   }
-
   50% {
     -webkit-transform: scale(1.4);
   }
-
   100% {
     -webkit-transform: scale(1);
   }
 }
 
 /* SECOND SECTION - ABOUT ME */
+
 #about-section {
   margin: 0 auto;
   max-width: 1600px;
@@ -273,6 +275,7 @@ h3 {
 }
 
 /* FORM */
+
 form {
   width: 1000px;
   margin: 0 auto;
@@ -303,7 +306,7 @@ input {
   border: 1px solid #d5dbe2;
 }
 
-button {
+form button {
   border-radius: 5px;
   border: 1px solid #EAC67A;
   background-color: #EAC67A;
@@ -361,7 +364,6 @@ button:hover {
 }
 
 .grid-container *:after {
-  content: attr(class);
   position: absolute;
   top: 0;
   left: 0;
@@ -380,4 +382,48 @@ button:hover {
   min-width: 80%;
   margin: 50px auto;
   height: 100%;
+}
+
+.img-wrapper img {
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.text-wrapper {
+  opacity: 0;
+  transition: 0.5s ease;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -45%;
+  width: 35%;
+  height: auto;
+}
+
+.text-wrapper button {
+  border-radius: 5px;
+  border: 1px solid #EAC67A;
+  background-color: #EAC67A;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  height: 30px;
+  width: 150px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.text-wrapper button:hover {
+  cursor: pointer;
+  background-color: #A38A55;
+  border: 1px solid #A38A55;
+}
+
+.img-wrapper:hover .text-wrapper {
+  opacity: 0.8;
+}
+
+.img-wrapper:hover img {
+  opacity: 0.6;
 }
