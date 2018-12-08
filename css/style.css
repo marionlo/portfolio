@@ -218,6 +218,13 @@ h3 {
 
 .about-category {
   width: 25%;
+  text-align:  center;
+}
+
+.about-category .fas {
+  font-size: 34px;
+  color: #a7aaaf;
+  opacity: 0.4;
 }
 
 .cat-description {
