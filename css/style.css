@@ -474,20 +474,45 @@ button:hover {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
+    text-align: center;
+}
+
+.modal-content img {
+  margin: 0 auto;
+  width:40%;
+  opacity: 1;
 }
 
 /* The Close Button */
-.close {
+.fa-times {
     color: #aaaaaa;
-    float: right;
-    font-size: 28px;
+    display: flex;
+    font-size: 30px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.fa-times:hover,
+.fa-times:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+h5 {
+  font-size: 30px;
+  font-family: 'Barlow', sans-serif;
+  color: #A38A55;
+}
+
+.modal-desc-sbs  {
+  margin-top: 50px;
+   line-height: 35px;
+}
+
+h6 {
+  font-size: 26px;
+  font-family: 'Barlow', sans-serif;
+  color: #A38A55;
+  margin-top:40px;
 }
