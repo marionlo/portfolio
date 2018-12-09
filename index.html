@@ -18,6 +18,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
   <script src="js/scrollify.js"></script>
 
+
 </head>
 
 <body>
@@ -127,11 +128,36 @@
     <p class="projects-description">Here are a few recent projects, feel free to <a href="mailto:marion.lotito@gmail.com">Email me</a> if you want more details.</p>
     <div class="grid-container">
       <div class="img-wrapper">
+        <img src="img/projects/sbs.png">
+        <div class="text-wrapper">
+          <h4>www.sbs-stats.com</h4>
+          <p>Technologies used: Html5, CSS3, JavaScript, JQuery, Google Chart API</p>
+          <button id="myBtn">More details</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h5>www.sbs-stats.com<h5>
+            <p>This project was made for ...</p>
+          </div>
+
+        </div>
+
+
+
+
+
+          </div>
+      <div class="img-wrapper">
         <img src="img/projects/memory-game.png">
         <div class="text-wrapper">
           <h4>Memory Game</h4>
           <p>Technologies used: Html5, CSS3, JavaScript</p>
-          <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">See the project</button>
+          <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
         </div>
       </div>
       <div class="img-wrapper">
@@ -139,66 +165,37 @@
         <div class="text-wrapper">
           <h4>Classic Arcade Game Clone: Frogger</h4>
           <p>Technologies used: Html5, Canvas, CSS3, JavaScript, Object-oriented programming</p>
-            <button onclick="window.open('https://github.com/marionlo/arcade-game', '_blank')">See the project</button>
+            <button onclick="window.open('https://github.com/marionlo/arcade-game', '_blank')">More details</button>
+        </div>
+      </div>
+
+      <div class="img-wrapper">
+        <img src="img/projects/memory-game.png">
+        <div class="text-wrapper">
+          <h4>Memory Game</h4>
+          <p>Technologies used: Html5, CSS3, JavaScript</p>
+          <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
         </div>
       </div>
       <div class="img-wrapper">
         <img src="img/projects/memory-game.png">
         <div class="text-wrapper">
+          <h4>Memory Game</h4>
           <p>Technologies used: Html5, CSS3, JavaScript</p>
-          <button>See the project</button>
+          <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
         </div>
       </div>
       <div class="img-wrapper">
         <img src="img/projects/memory-game.png">
         <div class="text-wrapper">
+          <h4>Memory Game</h4>
           <p>Technologies used: Html5, CSS3, JavaScript</p>
-          <button>See the project</button>
-        </div>
-      </div>
-      <div class="img-wrapper">
-        <img src="img/projects/memory-game.png">
-        <div class="text-wrapper">
-          <p>Technologies used: Html5, CSS3, JavaScript</p>
-          <button>See the project</button>
-        </div>
-      </div>
-      <div class="img-wrapper">
-        <img src="img/projects/memory-game.png">
-        <div class="text-wrapper">
-          <p>Technologies used: Html5, CSS3, JavaScript</p>
-          <button>See the project</button>
+          <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
         </div>
       </div>
 
     </div>
   </section>
-
-  <!-- <div class="portfolio-grid">
-    <div class="portfolio-row">
-      <div class="portfolio-project">
-        <img src="img/projects/memory-game.png">
-      </div>
-      <div class="portfolio-project">
-        <img src="img/projects/memory-game.png">
-      </div>
-      <div class="portfolio-project">
-        <img src="img/projects/memory-game.png">
-      </div>
-    </div>
-    <div class="portfolio-row">
-      <div class="portfolio-project">
-      <img src="img/projects/memory-game.png">
-      </div>
-      <div class="portfolio-project">
-      <img src="img/projects/memory-game.png">
-      </div>
-      <div class="portfolio-project">
-    <img src="img/projects/memory-game.png">
-      </div>
-    </div>
-  </div>
- -->
 
 
   <!-- FORM CONTACT -->
@@ -246,10 +243,10 @@
         section: ".scrollable-section",
       });
     });
+
   </script>
 
-
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
