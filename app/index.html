@@ -9,7 +9,7 @@
       <title>Marion Lotito - Front-End Developer</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- endbuild -->
@@ -66,7 +66,11 @@
     </header>
 
     <section id="about-section" data-section-name="about" class="scrollable-section" style="height:600px;">
-      <h1>About me</h1>
+      <h1 data-aos="slide-right" data-aos-offset="200"
+         data-aos-delay="30"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true">About me</h1>
       <div class="aboutme">
         <div class="profile-img">
           <img id="profile-img" src="images/marion.jpg">
@@ -128,7 +132,11 @@
 
 
     <section class="portfolio scrollable-section">
-      <h1>My projects</h1>
+      <h1 data-aos="slide-right" data-aos-offset="200"
+         data-aos-delay="30"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true">My projects</h1>
       <p class="projects-description">Here are a few recent projects, feel free to <a href="mailto:marion.lotito@gmail.com">Email me</a> if you want more details.</p>
       <div class="grid-container">
         <div class="img-wrapper">
@@ -206,8 +214,11 @@
 
     <!-- FORM CONTACT -->
     <section class="scrollable-section contact" data-section-name="contact">
-      <h1>Contact me</h1>
-
+      <h1 data-aos="slide-right" data-aos-offset="200"
+         data-aos-delay="30"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true">Contact me</h1>
       <form method="post">
         <p>Interested in working together? Contact me right now!</p>
 
@@ -272,5 +283,9 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
