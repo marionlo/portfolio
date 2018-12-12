@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hi, I'm Marion, a Front-End Developer! This is my portfolio, get to know me and discover my projects!">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Web,Developer,Front-end,portfolio,Marion Lotito">
+    <meta name="author" content="Marion LOTITO">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Marion Lotito - Front-End Developer</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js" type="text/javascript"></script>
+ <script src="https://use.fontawesome.com/6a8117da1e.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+ <script src="scripts/scrollify.js"></script>
+
+  </head>
+  <body>
+
+    <header class="scrollable-section" data-section-name="home">
+      <div class="menu">
+        <img src="images/logo.png" class="logo">
+        <div class="navigation">
+
+          <a href="#">
+            <div class="button-nav">About Me</div>
+          </a>
+          <a href="#">
+            <div class="button-nav">My Projects</div>
+          </a>
+          <a href="#">
+            <div class="button-nav">Contact me</div>
+          </a>
+          <div class="social">
+            <a href="https://www.facebook.com/marion.lotito" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="typed-center">
+        <span id="typed"></span>
+      </div>
+      <!-- logo
+      lien nav
+      => sticky navbar
+      white
+      écriture blue navy
+      hover qui colore en orangé avec un petit soulignement
+      hover quand on est sur X partie du site. -->
+      <div class="scroll">
+        <i class="fas fa-angle-down" onclick="$.scrollify.move('#about');"></i>
+      </div>
+    </header>
+
+    <section id="about-section" data-section-name="about" class="scrollable-section" style="height:600px;">
+      <h1>About me</h1>
+      <div class="aboutme">
+        <div class="profile-img">
+          <img id="profile-img" src="images/marion.jpg">
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h2>alert("Hi!");</h2>
+
+            <p>I'm Marion, nice to meet you!</p>
+            <br>
+            <p>I'm a self-taught <strong>front-end developer</strong> from France, currently based in Luxembourg.
+              <br>I have a serious passion for <strong>web development</strong> and especially solving issues on JavaScript :D
+            </p>
+            <br>
+            <p>Curious and eager to learn, I'm striving to make intuitive, responsive and accessible websites, or web applications.
+              <br>I can help you build your next project!
+            </p>
+            <br>
+            <p>Feel free to take a look at my latest projects right below!</p>
+          </div>
+          <div class="about-skills">
+            <div class="about-category">
+              <i class="fas fa-palette"></i>
+              <h3>Web Design</h3>
+              <p class="cat-description">I can create a modern and intuitive design that will suits your needs and strengthen your brand.</p>
+            </div>
+            <div class="about-category">
+              <i class="fas fa-code"></i>
+              <h3>Front-end development</h3>
+              <p class="cat-description">I'm using the latest technologies in Front-End development, from HTML to React or Angular.</p>
+            </div>
+            <div class="about-category">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Accessible and Responsive</h3>
+              <p class="cat-description">Because each person surfing on the Web is different, I can offer web applications tailored to every user.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="picto-skills">
+
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js-square"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-angular"></i>
+
+
+        <i class="fab fa-sass"></i>
+        <i class="fab fa-npm"></i>
+        <i class="fab fa-gulp"></i>
+        <i class="fab fa-git-square"></i>
+        <i class="fab fa-github"></i>
+
+      </div>
+    </section>
+
+
+    <section class="portfolio scrollable-section">
+      <h1>My projects</h1>
+      <p class="projects-description">Here are a few recent projects, feel free to <a href="mailto:marion.lotito@gmail.com">Email me</a> if you want more details.</p>
+      <div class="grid-container">
+        <div class="img-wrapper">
+          <img src="images/projects/sbs.png">
+          <div class="text-wrapper">
+            <h4>www.sbs-stats.com</h4>
+            <p>Technologies: Html5, CSS3, JavaScript, JQuery, Google Chart API</p>
+            <button id="myBtn">More details</button>
+          </div>
+
+          <!-- The Modal -->
+
+
+
+            </div>
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <i class="fas fa-times"></i>
+                <h5>SBS STATS</h5>
+                <p class="modal-desc-sbs">Project created for a company called SBS Mobilier, which needed an app that allows clients to check the statistics of the use of one of their product called "La boîte à Rêves".
+                  <br>I've worked mainly on the Front-End developmment, and how to connect the Back-end in a clever way.
+                  <br>I've used <strong>Flexbox, Google Charts API and Jquery</strong> in order to build and design the app.</p>
+                  <h6>Screenshot of the login page</h6>
+      <img src="images/projects/sbs-login.png">
+              </div>
+
+            </div>
+        <div class="img-wrapper">
+          <img src="images/projects/memory-game.png">
+          <div class="text-wrapper">
+            <h4>Memory Game</h4>
+            <p>Technologies: Html5, CSS3, JavaScript</p>
+            <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <img src="images/projects/frogger.png">
+          <div class="text-wrapper">
+            <h4>Classic Arcade Game Clone: Frogger</h4>
+            <p>Technologies: Html5, Canvas, CSS3, JavaScript, Object-oriented programming</p>
+              <button onclick="window.open('https://github.com/marionlo/arcade-game', '_blank')">More details</button>
+          </div>
+        </div>
+
+        <div class="img-wrapper">
+          <img src="images/projects/joli.png">
+          <div class="text-wrapper">
+            <h4>www.joli.lu</h4>
+            <p>Technologies and skills: Html5, CSS3, Javascript, PHP, Theme customization</p>
+            <button onclick="window.open('http://www.joli.lu/', '_blank')">See the website</button>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <img src="images/projects/memory-game.png">
+          <div class="text-wrapper">
+            <h4>Memory Game</h4>
+            <p>Technologies used: Html5, CSS3, JavaScript</p>
+            <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <img src="images/projects/memory-game.png">
+          <div class="text-wrapper">
+            <h4>Memory Game</h4>
+            <p>Technologies used: Html5, CSS3, JavaScript</p>
+            <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FORM CONTACT -->
+    <section class="scrollable-section contact" data-section-name="contact">
+      <h1>Contact me</h1>
+
+      <form method="post">
+        <p>Interested in working together? Contact me right now!</p>
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" />
+
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+
+        <label for="company">Type of project</label>
+        <input type="text" id="type of project" />
+
+        <label for="tel">Additional details</label>
+        <input type="text" id="details" />
+
+        <button type="submit" name="submit">Submit</button>
+      </form>
+
+
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="scripts/main.js"></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
