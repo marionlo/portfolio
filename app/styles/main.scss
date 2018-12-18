@@ -108,12 +108,18 @@ header {
   justify-content: space-around;
 }
 
+
+
 .fa {
   color: #d2d2d3;
   font-size: 16px;
   letter-spacing: normal;
   text-align: start;
   padding-left: 10px;
+}
+
+.fa:hover {
+   color: #985354;
 }
 
 .typed-center {
@@ -157,7 +163,7 @@ header {
 
 /* pulse animation */
 
-@-webkit-keyframes bounce {
+@keyframes bounce {
   0% {
     -webkit-transform: scale(1);
   }
