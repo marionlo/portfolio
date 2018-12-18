@@ -72,7 +72,10 @@
          data-aos-easing="ease-in-out"
          data-aos-once="true">About me</h1>
       <div class="aboutme">
-        <div class="profile-img">
+        <div class="profile-img" data-aos="fade-down"
+     data-aos-easing="ease"
+     data-aos-duration="1000"
+     data-aos-once="true">
           <img id="profile-img" src="images/marion.jpg">
         </div>
         <div class="about-content">
@@ -139,7 +142,7 @@
          data-aos-once="true">My projects</h1>
       <p class="projects-description">Here are a few recent projects, feel free to <a href="mailto:marion.lotito@gmail.com">Email me</a> if you want more details.</p>
       <div class="grid-container">
-        <div class="img-wrapper" data-aos="flip-left">
+        <div class="img-wrapper" data-aos="flip-left" data-aos-once="true">
           <img src="images/projects/sbs.png">
           <div class="text-wrapper">
             <h4>www.sbs-stats.com</h4>
@@ -166,7 +169,7 @@
               </div>
 
             </div>
-        <div class="img-wrapper" data-aos="flip-left">
+        <div class="img-wrapper" data-aos="flip-left" data-aos-once="true">
           <img src="images/projects/memory-game.png">
           <div class="text-wrapper">
             <h4>Memory Game</h4>
@@ -174,7 +177,7 @@
             <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
           </div>
         </div>
-        <div class="img-wrapper" data-aos="flip-left">
+        <div class="img-wrapper" data-aos="flip-left" data-aos-once="true">
           <img src="images/projects/frogger.png">
           <div class="text-wrapper">
             <h4>Classic Arcade Game Clone: Frogger</h4>
@@ -183,7 +186,7 @@
           </div>
         </div>
 
-        <div class="img-wrapper" data-aos="flip-right">
+        <div class="img-wrapper" data-aos="flip-right" data-aos-once="true">
           <img src="images/projects/joli.png">
           <div class="text-wrapper">
             <h4>www.joli.lu</h4>
@@ -191,15 +194,15 @@
             <button onclick="window.open('http://www.joli.lu/', '_blank')">See the website</button>
           </div>
         </div>
-        <div class="img-wrapper" data-aos="flip-right">
-          <img src="images/projects/memory-game.png">
+        <div class="img-wrapper" data-aos="flip-right" data-aos-once="true">
+          <img src="images/projects/reads.png">
           <div class="text-wrapper">
-            <h4>Memory Game</h4>
-            <p>Technologies used: Html5, CSS3, JavaScript</p>
-            <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
+            <h4>My Reads App</h4>
+            <p>Technologies used: Html5, CSS3, React</p>
+            <button onclick="window.open('https://github.com/marionlo/Reads-app', '_blank')">More details</button>
           </div>
         </div>
-        <div class="img-wrapper" data-aos="flip-right">
+        <div class="img-wrapper" data-aos="flip-right" data-aos-once="true">
           <img src="images/projects/memory-game.png">
           <div class="text-wrapper">
             <h4>Memory Game</h4>
@@ -241,12 +244,14 @@
         <button type="submit" name="submit">Submit</button>
       </form>
 
-
+      <div class="footer">
+        <div class="copyright">
+        Copyright © 2018 Marion Lotito - All rights reserved.
+      </div>
+      </div>
     </section>
 
-    <footer>
 
-    </footer>
     <script src="scripts/main.js"></script>
 
 
@@ -267,17 +272,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
