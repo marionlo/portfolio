@@ -53,13 +53,7 @@
       <div class="typed-center">
         <span id="typed"></span>
       </div>
-      <!-- logo
-      lien nav
-      => sticky navbar
-      white
-      écriture blue navy
-      hover qui colore en orangé avec un petit soulignement
-      hover quand on est sur X partie du site. -->
+
       <div class="scroll">
         <i class="fas fa-angle-down" onclick="$.scrollify.move('#about');"></i>
       </div>
@@ -277,6 +271,15 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+
+  <!-- Typed script for the message on the first section -->
+    <script>var typed = new Typed('#typed', {
+      strings: ['Hi! I am Marion, a <span id="typed-front"><strong>Front-End Developer</strong></span> from France!'],
+      typeSpeed: 30,
+      backSpeed: 100,
+      fadeOut: true,
+
+    });</script>
     <!-- endbuild -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

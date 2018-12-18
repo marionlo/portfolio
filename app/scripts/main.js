@@ -1,12 +1,3 @@
-// Typed script for the message on the first section
-var typed = new Typed('#typed', {
-  strings: ['Hi! I am Marion, a <span id="typed-front"><strong>Front-End Developer</strong></span> from France!'],
-  typeSpeed: 30,
-  backSpeed: 100,
-  fadeOut: true,
-
-});
-
 // Scroll animation
 $(function() {
   $.scrollify({
