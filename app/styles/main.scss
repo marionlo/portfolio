@@ -207,7 +207,7 @@ header {
 --------------------------------------------------------------*/
 #about-section {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 .aboutme {
@@ -242,6 +242,10 @@ h3 {
   max-width: 100%;
   margin-right: 20px;
   border-radius: 10px;
+}
+
+#profile-img-mobile {
+  display: none;
 }
 
 .about-skills {
@@ -620,5 +624,45 @@ button:hover {
   }
 
     /* About me - Second section */
+
+    .aboutme {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 0px;
+    }
+
+    #profile-img {
+      display: none;
+    }
+
+    #profile-img-mobile {
+      border-radius: 50%;
+      display: inline;
+      max-height: 170px;
+    }
+
+    .about-text {
+      margin-left: 0px;
+        font-size: 18px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    .about-skills {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-category {
+      width: 100%;
+      padding-bottom:40px;
+    }
+
+    .cat-description {
+      font-size: 16px;
+    }
 
 }
