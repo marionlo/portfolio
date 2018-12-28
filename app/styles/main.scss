@@ -603,12 +603,16 @@ button:hover {
 
   /* Home - First section */
 
+  .navigation {
+    display: none;
+  }
+
   header {
     height: 300px;
   }
 
 .typed-center {
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
   #typed {
