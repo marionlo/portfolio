@@ -1,7 +1,7 @@
 /*
-Theme Name: Portfolio Web Dev - Marion Lotito
+Theme Name: Portfolio Web Dev
 Author: Marion Lotito
-Author URL: http://www.marion-lotito.com
+Author URI: http://www.marion-lotito.com
 Description: Portfolio hardcoded with love
 Version: 2018
 */
@@ -582,4 +582,43 @@ button:hover {
   font-family: 'Barlow', sans-serif;
   text-align: center;
   padding-top: 40px;
+}
+
+
+
+/*--------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Mobile
+--------------------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* Home - First section */
+
+  header {
+    height: 300px;
+  }
+
+.typed-center {
+  padding-top: 100px;
+}
+
+  #typed {
+    font-size: 30px;
+  }
+
+  .typed-cursor {
+    font-size: 50px;
+  }
+
+  .scroll {
+    padding-top: 200px;
+  }
+
+    /* About me - Second section */
+
 }
