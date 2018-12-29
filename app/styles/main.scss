@@ -213,7 +213,7 @@ header {
 .aboutme {
   display: flex;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 h2 {
@@ -271,7 +271,7 @@ h3 {
 }
 
 .picto-skills {
-  padding-top: 100px;
+  padding-top: 10px;
   text-align: center;
   font-size: 50px;
   display: flex;
@@ -671,6 +671,17 @@ button:hover {
       font-size: 16px;
       margin: 0 auto;
       width: 90%;
+    }
+
+    .picto-skills {
+      flex-wrap: wrap;
+      padding-bottom: 200px;
+    }
+
+    .picto-skills i {
+      flex: 1 0 21%; 
+      margin: 5px;
+      height: 80px;
     }
 
 }
