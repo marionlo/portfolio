@@ -569,9 +569,9 @@ button:hover {
 
 .footer {
   background-color: #34373d;
-  height: 100px;
+  height: 125px;
   position: relative;
-  top: 145px;
+  top: 155px;
 }
 
 .copyright {
@@ -579,6 +579,11 @@ button:hover {
   font-family: 'Barlow', sans-serif;
   text-align: center;
   padding-top: 40px;
+}
+
+.social-footer {
+  text-align: center;
+  padding-top: 10px;
 }
 /*--------------------------------------------------------------
 # RESPONSIVE
