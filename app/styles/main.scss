@@ -617,7 +617,9 @@ button:hover {
   }
 
 .typed-center {
-  padding-top: 200px;
+  padding-top: 40%;
+  width: 80%;
+  margin: 0 auto;
 }
 
   #typed {
@@ -629,7 +631,7 @@ button:hover {
   }
 
   .scroll {
-    padding-top: 200px;
+    padding-top: 20%;
   }
 
     /* About me - Second section */
@@ -697,7 +699,7 @@ button:hover {
 
         .projects-description {
           width: 80%;
-          margin: 0 auto;
+          margin: 20px auto;
         }
 
         .grid-container {
@@ -722,5 +724,11 @@ button:hover {
           max-width: 300px;
           margin: 0 auto;
         }
+
+                /* My projects - Third section */
+                form p {
+                  padding-top: 10px;
+                  text-align: center;
+                }
 
 }
