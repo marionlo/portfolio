@@ -56,11 +56,10 @@ h1 {
   padding-top: 40px;
   font-family: 'Ranga', cursive;
 }
-
-
 /*--------------------------------------------------------------
 # Home - First Section
 --------------------------------------------------------------*/
+
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -166,10 +165,9 @@ header {
 #typed-front {
   color: #EAC67A;
 }
-
-
 /* Button next section on Homepage
 	 ========================================================================== */
+
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -200,11 +198,10 @@ header {
     -webkit-transform: scale(1);
   }
 }
-
-
 /*--------------------------------------------------------------
 # About me - Second Section
 --------------------------------------------------------------*/
+
 #about-section {
   margin: 0 auto;
   max-width: 1400px;
@@ -318,11 +315,10 @@ h3 {
 .picto-skills .fa-github {
   color: #4078c0;
 }
-
-
 /*--------------------------------------------------------------
 # My Projects - Third Section
 --------------------------------------------------------------*/
+
 .portfolio {
   height: auto;
 }
@@ -383,7 +379,6 @@ h3 {
   min-width: 80%;
   margin: 50px auto;
   height: 100%;
-
 }
 
 .img-wrapper img {
@@ -446,7 +441,6 @@ h3 {
   opacity: 0.4;
 }
 /* The Modal (background) */
-
 .modal {
   display: none;
   /* Hidden by default */
@@ -469,9 +463,7 @@ h3 {
   background-color: rgba(0,0,0,0.4);
   /* Black w/ opacity */
 }
-
 /* Modal Content */
-
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -486,9 +478,7 @@ h3 {
   width: 40%;
   opacity: 1;
 }
-
 /* The Close Button */
-
 .fa-times {
   color: #aaaaaa;
   display: flex;
@@ -520,11 +510,10 @@ h6 {
   color: #A38A55;
   margin-top: 40px;
 }
-
-
 /*--------------------------------------------------------------
 # Contact me - Fourth Section
 --------------------------------------------------------------*/
+
 form {
   max-width: 1000px;
   margin: 0 auto;
@@ -574,11 +563,10 @@ button:hover {
   background-color: #A38A55;
   border: 1px solid #A38A55;
 }
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 .footer {
   background-color: #34373d;
   height: 100px;
@@ -592,22 +580,14 @@ button:hover {
   text-align: center;
   padding-top: 40px;
 }
-
-
-
 /*--------------------------------------------------------------
 # RESPONSIVE
 --------------------------------------------------------------*/
-
-
 /*--------------------------------------------------------------
 # Mobile
 --------------------------------------------------------------*/
-
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* Home - First section */
-
   .navigation {
     display: none;
   }
@@ -616,11 +596,11 @@ button:hover {
     height: 300px;
   }
 
-.typed-center {
-  padding-top: 40%;
-  width: 80%;
-  margin: 0 auto;
-}
+  .typed-center {
+    padding-top: 40%;
+    width: 80%;
+    margin: 0 auto;
+  }
 
   #typed {
     font-size: 30px;
@@ -633,102 +613,101 @@ button:hover {
   .scroll {
     padding-top: 20%;
   }
+  /* About me - Second section */
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
 
-    /* About me - Second section */
+  #profile-img {
+    display: none;
+  }
 
-    .aboutme {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-top: 0px;
-    }
+  #profile-img-mobile {
+    border-radius: 50%;
+    display: inline;
+    max-height: 170px;
+  }
 
-    #profile-img {
-      display: none;
-    }
+  .about-text {
+    margin-left: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
 
-    #profile-img-mobile {
-      border-radius: 50%;
-      display: inline;
-      max-height: 170px;
-    }
+  h2 {
+    font-size: 26px;
+  }
 
-    .about-text {
-      margin-left: 0px;
-        font-size: 18px;
-        margin: 0 auto;
-        width: 90%;
-    }
+  .about-skills {
+    display: flex;
+    flex-direction: column;
+  }
 
-    h2 {
-      font-size: 26px;
-    }
+  .about-category {
+    width: 100%;
+    padding-bottom: 40px;
+  }
 
-    .about-skills {
-      display: flex;
-      flex-direction: column;
-    }
+  .cat-description {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
 
-    .about-category {
-      width: 100%;
-      padding-bottom:40px;
-    }
+  .picto-skills {
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
 
-    .cat-description {
-      font-size: 16px;
-      margin: 0 auto;
-      width: 90%;
-    }
+  .picto-skills i {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 80px;
+  }
 
-    .picto-skills {
-      flex-wrap: wrap;
-      padding-bottom: 200px;
-    }
+  .wrapper-skills h3 {
+    font-size: 20px;
+  }
+  /* My projects - Third section */
+  .projects-description {
+    width: 80%;
+    margin: 20px auto;
+  }
 
-    .picto-skills i {
-      flex: 1 0 21%;
-      margin: 5px;
-      height: 80px;
-    }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 1fr;
+    grid-template-areas: "." "." "." "." "." ".";
+    grid-row-gap: 0;
+  }
 
-    .wrapper-skills h3 {
-      font-size: 20px;
-    }
+  .img-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-        /* My projects - Third section */
+  .text-wrapper {
+    margin-top: -25%;
+  }
 
-        .projects-description {
-          width: 80%;
-          margin: 20px auto;
-        }
-
-        .grid-container {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: 300px 300px 300px 300px 300px 1fr;
-          grid-template-areas: "." "." "." "." "." ".";
-          grid-row-gap: 0;
-        }
-
-        .img-wrapper img {
-          width: 90%;
-          margin: 0 auto;
-        }
-
-        .text-wrapper {
-          margin-top: -25%;
-        }
-
-        .text-wrapper p {
-          font-size: 1em;
-          max-width: 300px;
-          margin: 0 auto;
-        }
-
-                /* My projects - Third section */
-                form p {
-                  padding-top: 10px;
-                  text-align: center;
-                }
-
+  .text-wrapper p {
+    font-size: 1em;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /* My projects - Fourth section */
+  form p {
+    padding-top: 10px;
+    text-align: center;
+  }
+  /* Footer */
+  .copyright {
+    margin-top: -80px;
+    padding-top: 30px;
+  }
 }
