@@ -59,19 +59,26 @@ h1 {
 /*--------------------------------------------------------------
 # Home - First Section
 --------------------------------------------------------------*/
-
 .logo {
   height: 100px;
   padding-left: 30px;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5214460784313726)), color-stop(51%, rgba(61, 61, 65, 0.45702030812324934)), to(rgba(0, 0, 0, 1))), url("../images/header.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5214460784313726) 0%, rgba(61, 61, 65, 0.45702030812324934) 51%, rgba(0, 0, 0, 1) 100%), url("../images/header.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5214460784313726) 0%, rgba(61, 61, 65, 0.45702030812324934) 51%, rgba(0, 0, 0, 1) 100%), url("../images/header.jpg");
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5214460784313726) 0%, rgba(61, 61, 65, 0.45702030812324934) 51%, rgba(0, 0, 0, 1) 100%), url("../images/header.jpg");
   height: 950px;
   background-size: cover;
@@ -79,10 +86,16 @@ header {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 500px;
+  -ms-flex-line-pack: center;
   align-content: center;
   padding-bottom: 40px;
   margin-top: 40px;
@@ -118,19 +131,23 @@ header {
   background-color: #EAC67A;
   visibility: hidden;
   -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .button-nav:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 .social {
   margin-right: 40px;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -167,7 +184,6 @@ header {
 }
 /* Button next section on Homepage
 	 ========================================================================== */
-
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -185,6 +201,19 @@ header {
   animation-duration: 2s;
 }
 /* pulse animation */
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.4);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
 @keyframes bounce {
   0% {
     -webkit-transform: scale(1);
@@ -201,14 +230,17 @@ header {
 /*--------------------------------------------------------------
 # About me - Second Section
 --------------------------------------------------------------*/
-
 #about-section {
   margin: 0 auto;
   max-width: 1400px;
 }
 
 .aboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 30px;
 }
@@ -246,7 +278,10 @@ h3 {
 }
 
 .about-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 50px;
 }
@@ -271,8 +306,14 @@ h3 {
   padding-top: 10px;
   text-align: center;
   font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -318,7 +359,6 @@ h3 {
 /*--------------------------------------------------------------
 # My Projects - Third Section
 --------------------------------------------------------------*/
-
 .portfolio {
   height: auto;
 }
@@ -330,29 +370,12 @@ h3 {
   margin-top: 40px;
 }
 
-.portfolio-row {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 150px;
-  padding: 50px 60px 20px 0;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.portfolio-project {
-  -webkit-box-shadow: 3px 2px 17px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 2px 17px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 2px 17px 1px rgba(0, 0, 0, 0.75);
-}
-
 .grid-container img {
   width: 100%;
   max-width: 450px;
   height: auto;
   border-radius: 10px;
   -webkit-box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
 }
 
@@ -367,35 +390,52 @@ h3 {
 }
 
 .grid-container {
-  display: grid;
-  justify-items: center;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  grid-row-gap: 2em;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: ". . ."". . .";
-  margin-top: 50px;
-  min-width: 80%;
-  margin: 50px auto;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.img-wrapper {
+  padding: 20px;
 }
 
 .img-wrapper img {
   display: block;
   opacity: 1;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 .text-wrapper {
   opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin-top: -35%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-width: 400px;
   text-align: center;
@@ -411,6 +451,8 @@ h3 {
   width: 150px;
   margin: 20px auto;
   text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   text-align: center;
 }
@@ -441,6 +483,7 @@ h3 {
   opacity: 0.4;
 }
 /* The Modal (background) */
+
 .modal {
   display: none;
   /* Hidden by default */
@@ -464,6 +507,7 @@ h3 {
   /* Black w/ opacity */
 }
 /* Modal Content */
+
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -479,8 +523,11 @@ h3 {
   opacity: 1;
 }
 /* The Close Button */
+
 .fa-times {
   color: #aaaaaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   font-weight: bold;
@@ -513,12 +560,16 @@ h6 {
 /*--------------------------------------------------------------
 # Contact me - Fourth Section
 --------------------------------------------------------------*/
-
 form {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 10px 20px;
   font-family: 'Barlow', sans-serif;
@@ -554,6 +605,8 @@ form button {
   width: 200px;
   margin: 0 auto;
   text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   font-size: 18px;
 }
@@ -566,7 +619,6 @@ button:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 .footer {
   background-color: #34373d;
   height: 125px;
@@ -620,7 +672,12 @@ button:hover {
   }
   /* About me - Second section */
   .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     padding-top: 0;
@@ -648,7 +705,12 @@ button:hover {
   }
 
   .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -664,11 +726,14 @@ button:hover {
   }
 
   .picto-skills {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 200px;
   }
 
   .picto-skills i {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 21%;
     flex: 1 0 21%;
     margin: 5px;
     height: 80px;
@@ -681,14 +746,6 @@ button:hover {
   .projects-description {
     width: 80%;
     margin: 20px auto;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px 300px 300px 1fr;
-    grid-template-areas: "." "." "." "." "." ".";
-    grid-row-gap: 0;
   }
 
   .img-wrapper img {
@@ -706,7 +763,6 @@ button:hover {
     margin: 0 auto;
   }
   /* Modal Content */
-
   .modal {
     padding-top: 20px;
   }
@@ -773,7 +829,12 @@ button:hover {
   }
   /* About me - Second section */
   .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     padding-top: 0;
@@ -801,7 +862,12 @@ button:hover {
   }
 
   .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -817,11 +883,14 @@ button:hover {
   }
 
   .picto-skills {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 200px;
   }
 
   .picto-skills i {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 21%;
     flex: 1 0 21%;
     margin: 5px;
     height: 80px;
@@ -834,14 +903,6 @@ button:hover {
   .projects-description {
     width: 80%;
     margin: 20px auto;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px 300px 300px 1fr;
-    grid-template-areas: "." "." "." "." "." ".";
-    grid-row-gap: 0;
   }
 
   .img-wrapper img {
@@ -929,7 +990,12 @@ button:hover {
   }
   /* About me - Second section */
   .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     padding-top: 0;
@@ -957,7 +1023,12 @@ button:hover {
   }
 
   .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -973,6 +1044,7 @@ button:hover {
   }
 
   .picto-skills {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 200px;
   }
@@ -984,14 +1056,6 @@ button:hover {
   .projects-description {
     width: 80%;
     margin: 20px auto;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px 300px 300px 1fr;
-    grid-template-areas: "." "." "." "." "." ".";
-    grid-row-gap: 0;
   }
 
   .img-wrapper img {
