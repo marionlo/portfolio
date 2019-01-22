@@ -59,7 +59,6 @@ h1 {
 /*--------------------------------------------------------------
 # Home - First Section
 --------------------------------------------------------------*/
-
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -178,7 +177,6 @@ header {
 }
 /* Button next section on Homepage
 	 ========================================================================== */
-
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -225,7 +223,6 @@ header {
 /*--------------------------------------------------------------
 # About me - Second Section
 --------------------------------------------------------------*/
-
 #about-section {
   margin: 0 auto;
   max-width: 1400px;
@@ -355,7 +352,6 @@ h3 {
 /*--------------------------------------------------------------
 # My Projects - Third Section
 --------------------------------------------------------------*/
-
 .portfolio {
   height: auto;
 }
@@ -480,6 +476,7 @@ h3 {
   opacity: 0.4;
 }
 /* The Modal (background) */
+
 .modal {
   display: none;
   /* Hidden by default */
@@ -503,6 +500,7 @@ h3 {
   /* Black w/ opacity */
 }
 /* Modal Content */
+
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -518,6 +516,7 @@ h3 {
   opacity: 1;
 }
 /* The Close Button */
+
 .fa-times {
   color: #aaaaaa;
   display: -webkit-box;
@@ -554,7 +553,6 @@ h6 {
 /*--------------------------------------------------------------
 # Contact me - Fourth Section
 --------------------------------------------------------------*/
-
 form {
   max-width: 1000px;
   margin: 0 auto;
@@ -614,7 +612,6 @@ button:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 .footer {
   background-color: #34373d;
   height: 125px;
@@ -1110,5 +1107,180 @@ button:hover {
   .copyright {
     margin-top: 80px;
     padding-top: 30px;
+  }
+}
+/* # Tablets (portrait)
+--------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Home - First section */
+  header {
+    background-size: cover;
+  }
+
+  .typed-center {
+    padding-top: 40%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #typed {
+    font-size: 38px;
+  }
+
+  .typed-cursor {
+    font-size: 38px;
+  }
+
+  .scroll {
+    padding-top: 25%;
+  }
+  /* About me - Second section */
+  .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #profile-img {
+    display: none;
+  }
+
+  #profile-img-mobile {
+    border-radius: 50%;
+    display: inline;
+    max-height: 170px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-category {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .cat-description {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .picto-skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
+
+  .wrapper-skills h3 {
+    font-size: 20px;
+  }
+  /* My projects - Third section */
+  .projects-description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .img-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-wrapper {
+    margin-top: -25%;
+  }
+
+  .text-wrapper p {
+    font-size: 22px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .text-wrapper button {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+  }
+  /* Modal Content */
+  .modal {
+    padding-top: 20px;
+  }
+
+  .modal-content {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .modal-content img {
+    width: 80%;
+  }
+  /* The Close Button */
+  .fa-times {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+  /* My projects - Fourth section */
+  form {
+    width: 80%;
+  }
+
+  form label {
+    font-size: 18px;
+  }
+
+  form p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  form button {
+    height: 60px;
+    width: 250px;
+    font-size: 24px;
+  }
+  /* Footer */
+  .footer {
+    height: 150px;
+  }
+
+  .copyright {
+    margin-top: 80px;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+
+  .social-footer .fa {
+    font-size: 24px;
   }
 }
