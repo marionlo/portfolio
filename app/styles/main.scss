@@ -1284,3 +1284,31 @@ button:hover {
     font-size: 24px;
   }
 }
+
+/* # Laptops - Desktops
+--------------------------------------------------------------*/
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  /* Home - First section */
+
+#typed {
+  font-size: 46px;
+}
+
+.typed-center {
+  padding-top: 240px;
+}
+
+.typed-cursor {
+  font-size: 50px;
+}
+
+.scroll {
+  padding-top: 15%;
+}
+/* About - Second section */
+
+#about-section {
+width: 90%;
+}
+
+}
