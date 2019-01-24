@@ -23,7 +23,7 @@ Version: 2018
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Ranga|Barlow|Dosis');
+@import url('https://fonts.googleapis.com/css?family=Ranga|Barlow');
 
 * {
   list-style: none;
@@ -36,6 +36,8 @@ html {
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
+
+
 }
 
 a {
@@ -50,7 +52,7 @@ h1 {
   color: #985354;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 46px;
   text-align: center;
   padding-top: 40px;
@@ -1332,4 +1334,15 @@ button:hover {
     max-width: 25%;
     text-align: center;
   }
+
+  /* Footer */
+  .footer {
+    height: 150px;
+  }
+  .copyright {
+    margin-top: -20px;
+    padding-top: 30px;
+  }
+
+
 }
