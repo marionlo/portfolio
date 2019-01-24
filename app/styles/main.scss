@@ -23,7 +23,7 @@ Version: 2018
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Ranga|Barlow');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,700,900i|Ranga:400,700');
 
 * {
   list-style: none;
@@ -36,8 +36,6 @@ html {
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
-
-
 }
 
 a {
@@ -51,7 +49,6 @@ p {
 h1 {
   color: #985354;
   letter-spacing: normal;
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 46px;
   text-align: center;
@@ -61,6 +58,7 @@ h1 {
 /*--------------------------------------------------------------
 # Home - First Section
 --------------------------------------------------------------*/
+
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -101,19 +99,19 @@ header {
   align-content: center;
   padding-bottom: 40px;
   margin-top: 40px;
-  font-family: 'Barlow', sans-serif;
 }
 
 .button-nav {
   color: #EAC67A;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 16px;
   text-align: start;
   text-decoration: none;
   position: relative;
   cursor: pointer;
+  font-family: 'Barlow', sans-serif;
 }
 
 .button-nav:before {
@@ -179,6 +177,7 @@ header {
 }
 /* Button next section on Homepage
 	 ========================================================================== */
+
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -225,6 +224,7 @@ header {
 /*--------------------------------------------------------------
 # About me - Second Section
 --------------------------------------------------------------*/
+
 #about-section {
   margin: 0 auto;
   max-width: 1400px;
@@ -358,6 +358,7 @@ h3 {
 /*--------------------------------------------------------------
 # My Projects - Third Section
 --------------------------------------------------------------*/
+
 .portfolio {
   height: auto;
 }
@@ -482,7 +483,6 @@ h3 {
   opacity: 0.4;
 }
 /* The Modal (background) */
-
 .modal {
   display: none;
   /* Hidden by default */
@@ -506,7 +506,6 @@ h3 {
   /* Black w/ opacity */
 }
 /* Modal Content */
-
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -522,7 +521,6 @@ h3 {
   opacity: 1;
 }
 /* The Close Button */
-
 .fa-times {
   color: #aaaaaa;
   display: -webkit-box;
@@ -559,6 +557,7 @@ h6 {
 /*--------------------------------------------------------------
 # Contact me - Fourth Section
 --------------------------------------------------------------*/
+
 form {
   max-width: 1000px;
   margin: 0 auto;
@@ -618,6 +617,7 @@ button:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 .footer {
   background-color: #34373d;
   height: 125px;
@@ -1334,15 +1334,13 @@ button:hover {
     max-width: 25%;
     text-align: center;
   }
-
   /* Footer */
   .footer {
     height: 150px;
   }
+
   .copyright {
     margin-top: -20px;
     padding-top: 30px;
   }
-
-
 }
