@@ -25,6 +25,11 @@ Version: 2018
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,700,900i|Ranga:400,700');
 
+$background: whitesmoke;
+$primary: #985354;
+$secondary: #EAC67A;
+$secondary-bis: #A38A55;
+
 * {
   list-style: none;
   margin: 0;
@@ -35,8 +40,9 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color:$background;
 }
+
 
 a {
   text-decoration: none;
@@ -47,7 +53,7 @@ p {
 }
 
 h1 {
-  color: #985354;
+  color: $primary;
   letter-spacing: normal;
   font-weight: bold;
   font-size: 46px;
@@ -102,7 +108,7 @@ header {
 }
 
 .button-nav {
-  color: #EAC67A;
+  color: $secondary;
   letter-spacing: normal;
   text-transform: uppercase;
   font-weight: 400;
@@ -121,7 +127,7 @@ header {
   height: 2px;
   bottom: -10px;
   left: 0;
-  background-color: #EAC67A;
+  background-color: $secondary;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -153,7 +159,7 @@ header {
 }
 
 .fa:hover {
-  color: #985354;
+color: $primary;
 }
 
 .typed-center {
@@ -173,7 +179,7 @@ header {
 }
 
 #typed-front {
-  color: #EAC67A;
+  color: $secondary;
 }
 /* Button next section on Homepage
 	 ========================================================================== */
@@ -184,7 +190,7 @@ header {
 }
 
 .fa-angle-down {
-  color: whitesmoke;
+color: $background;
   cursor: pointer;
   font-size: 60px;
   -webkit-animation: bounce 1s forwards;
@@ -242,14 +248,14 @@ header {
 
 h2 {
   font-size: 34px;
-  color: #EAC67A;
+  color: $secondary;
   font-style: italic;
   padding-bottom: 10px;
   font-family: 'Barlow', sans-serif;
 }
 
 h3 {
-  color: #EAC67A;
+  color: $secondary;
   font-style: italic;
   font-family: 'Barlow', sans-serif;
   font-size: 24px;
@@ -292,7 +298,7 @@ h3 {
 
 .about-category .fas {
   font-size: 34px;
-  color: #842d2d;
+color: $primary;
   opacity: 0.8;
 }
 
@@ -443,8 +449,8 @@ h3 {
 
 .text-wrapper button {
   border-radius: 5px;
-  border: 1px solid #EAC67A;
-  background-color: #EAC67A;
+  border: 1px solid $secondary;
+  background-color: $secondary;
   color: white;
   font-family: 'Barlow', sans-serif;
   height: 30px;
@@ -471,8 +477,8 @@ h3 {
 
 .text-wrapper button:hover {
   cursor: pointer;
-  background-color: #A38A55;
-  border: 1px solid #A38A55;
+  background-color: $secondary-bis;
+  border: 1px solid $secondary-bis;
 }
 
 .img-wrapper:hover .text-wrapper {
@@ -540,7 +546,7 @@ h3 {
 h5 {
   font-size: 30px;
   font-family: 'Barlow', sans-serif;
-  color: #A38A55;
+  color:$secondary-bis;
 }
 
 .modal-desc-sbs {
@@ -551,7 +557,7 @@ h5 {
 h6 {
   font-size: 26px;
   font-family: 'Barlow', sans-serif;
-  color: #A38A55;
+  color: $secondary-bis;
   margin-top: 40px;
 }
 /*--------------------------------------------------------------
@@ -595,8 +601,8 @@ input {
 
 form button {
   border-radius: 5px;
-  border: 1px solid #EAC67A;
-  background-color: #EAC67A;
+  border: 1px solid $secondary;
+  background-color: $secondary;
   color: white;
   font-family: 'Barlow', sans-serif;
   height: 40px;
@@ -611,8 +617,8 @@ form button {
 
 button:hover {
   cursor: pointer;
-  background-color: #A38A55;
-  border: 1px solid #A38A55;
+  background-color: $secondary-bis;
+  border: 1px solid$secondary-bis;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -626,7 +632,7 @@ button:hover {
 }
 
 .copyright {
-  color: #A38A55;
+  color: $secondary-bis;
   font-family: 'Barlow', sans-serif;
   text-align: center;
   padding-top: 40px;
