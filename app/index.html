@@ -41,15 +41,21 @@
           <a onclick="$.scrollify.move('#contact');">
             <div class="button-nav">Contact me</div>
           </a>
+
           <div class="social">
             <a href="https://www.facebook.com/marion.lotito" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+            <a class="toggle-nav active" href="#">
+        <i class="fas fa-bars" onclick="openNav()"></i> </a>
           </div>
         </div>
 
       </div>
+
+
       <div class="typed-center">
         <span id="typed"></span>
       </div>
@@ -59,7 +65,7 @@
       </div>
     </header>
 
-    <section id="about-section" data-section-name="about" class="scrollable-section" style="height:600px;">
+    <section id="about-section" data-section-name="about" class="scrollable-section" >
       <h1 data-aos="slide-right" data-aos-offset="200"
          data-aos-delay="30"
          data-aos-duration="1000"
@@ -235,24 +241,24 @@
          data-aos-duration="1000"
          data-aos-easing="ease-in-out"
          data-aos-once="true" style="margin-top:200px;">Contact me</h1>
-      <form method="post">
+      <form method="post" action="contactform.php">
         <p>Interested in working together? Contact me right now!</p>
 
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname" />
+        <input type="text" name="firstname" id="firstname" />
 
 
         <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" />
+        <input type="text" name="lastname" id="lastname" />
 
         <label for="email">Email</label>
-        <input type="email" id="email" />
+        <input type="email" name="email" id="email" />
 
-        <label for="company">Type of project</label>
-        <input type="text" id="type of project" />
+        <label for="type">Type of project</label>
+        <input type="text" name="type" id="type" placeholder="Website, application..." />
 
-        <label for="tel">Additional details</label>
-        <input type="text" id="details" />
+        <label for="details">Additional details</label>
+        <input type="text" name="details" id="details" />
 
         <button type="submit" name="submit">Submit</button>
       </form>
