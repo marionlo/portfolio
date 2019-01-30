@@ -48,13 +48,28 @@
             <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 
-            <a class="toggle-nav active" href="#">
-        <i class="fas fa-bars" onclick="openNav()"></i> </a>
+            <a class="toggle-nav active" onclick="openNav()">
+        <i class="fas fa-bars" ></i> </a>
           </div>
         </div>
 
       </div>
 
+      <div id="menu-cat" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a onclick="$.scrollify.move('#about'); closeNav()">About Me</a>
+          <a onclick="$.scrollify.move('#projects'); closeNav()">My Projects</a>
+          <a onclick="$.scrollify.move('#contact'); closeNav()">Contact me</a>
+          <div class="overlay-social">
+          <a href="https://www.facebook.com/marion.lotito" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
 
       <div class="typed-center">
         <span id="typed"></span>
@@ -316,5 +331,15 @@
   <script>
     AOS.init();
   </script>
+  <script>
+function openNav() {
+  document.getElementById("menu-cat").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("menu-cat").style.width = "0%";
+
+}
+</script>
   </body>
 </html>
