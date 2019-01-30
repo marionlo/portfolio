@@ -24,7 +24,6 @@ Version: 2018
 # General
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,700,900i|Ranga:400,700');
-
 $background: whitesmoke;
 $primary: #985354;
 $secondary: #EAC67A;
@@ -40,9 +39,8 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color:$background;
+  background-color: $background;
 }
-
 
 a {
   text-decoration: none;
@@ -64,7 +62,6 @@ h1 {
 /*--------------------------------------------------------------
 # Home - First Section
 --------------------------------------------------------------*/
-
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -79,6 +76,10 @@ h1 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.toggle-nav {
+  display: none;
 }
 
 header {
@@ -159,7 +160,7 @@ header {
 }
 
 .fa:hover {
-color: $primary;
+  color: $primary;
 }
 
 .typed-center {
@@ -183,14 +184,13 @@ color: $primary;
 }
 /* Button next section on Homepage
 	 ========================================================================== */
-
 .scroll {
   text-align: center;
   padding-top: 300px;
 }
 
 .fa-angle-down {
-color: $background;
+  color: $background;
   cursor: pointer;
   font-size: 60px;
   -webkit-animation: bounce 1s forwards;
@@ -230,7 +230,6 @@ color: $background;
 /*--------------------------------------------------------------
 # About me - Second Section
 --------------------------------------------------------------*/
-
 #about-section {
   margin: 0 auto;
   max-width: 1400px;
@@ -298,7 +297,7 @@ h3 {
 
 .about-category .fas {
   font-size: 34px;
-color: $primary;
+  color: $primary;
   opacity: 0.8;
 }
 
@@ -364,7 +363,6 @@ color: $primary;
 /*--------------------------------------------------------------
 # My Projects - Third Section
 --------------------------------------------------------------*/
-
 .portfolio {
   height: auto;
 }
@@ -489,6 +487,7 @@ color: $primary;
   opacity: 0.4;
 }
 /* The Modal (background) */
+
 .modal {
   display: none;
   /* Hidden by default */
@@ -512,6 +511,7 @@ color: $primary;
   /* Black w/ opacity */
 }
 /* Modal Content */
+
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -527,6 +527,7 @@ color: $primary;
   opacity: 1;
 }
 /* The Close Button */
+
 .fa-times {
   color: #aaaaaa;
   display: -webkit-box;
@@ -546,7 +547,7 @@ color: $primary;
 h5 {
   font-size: 30px;
   font-family: 'Barlow', sans-serif;
-  color:$secondary-bis;
+  color: $secondary-bis;
 }
 
 .modal-desc-sbs {
@@ -563,7 +564,6 @@ h6 {
 /*--------------------------------------------------------------
 # Contact me - Fourth Section
 --------------------------------------------------------------*/
-
 form {
   max-width: 1000px;
   margin: 0 auto;
@@ -623,7 +623,6 @@ button:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 .footer {
   background-color: #34373d;
   height: 125px;
@@ -650,7 +649,11 @@ button:hover {
 --------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 480px) {
   /* Home - First section */
-  .navigation {
+  .button-nav {
+    display: none;
+  }
+
+  .social .fa {
     display: none;
   }
 
@@ -674,6 +677,16 @@ button:hover {
 
   .scroll {
     padding-top: 20%;
+  }
+
+  .navigation .social .toggle-nav {
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    display: inline;
+    color: $background;
+    font-size: 30px;
+    transition: color linear 0.15s;
   }
   /* About me - Second section */
   .aboutme {
@@ -807,12 +820,23 @@ button:hover {
 --------------------------------------------------------------*/
 @media (min-width: 481px) and (max-width: 767px) {
   /* Home - First section */
-  .navigation {
+  .button-nav {
     display: none;
   }
 
-  header {
-    height: 300px;
+  .social .fa {
+    display: none;
+  }
+
+  .navigation .social .toggle-nav {
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    display: inline;
+    color: $background;
+    font-size: 30px;
+    transition: color linear 0.15s;
+    float: right;
   }
 
   .typed-center {
