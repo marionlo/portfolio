@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Hi, I'm Marion, a Front-End Developer! This is my portfolio, get to know me and discover my projects!">
@@ -29,17 +29,17 @@
 
     <header class="scrollable-section" data-section-name="home">
       <div class="menu">
-        <img src="images/logo.png" class="logo">
-        <div class="navigation">
+        <img src="images/logo.png" class="logo" alt="Logo of the website">
+        <div class="navigation" role="navigation">
 
           <a onclick="$.scrollify.move('#about');">
-            <div class="button-nav">About Me</div>
+            <div class="button-nav" tabindex="0" aria-label="Go to About me section">About Me</div>
           </a>
           <a onclick="$.scrollify.move('#projects');">
-            <div class="button-nav">My Projects</div>
+            <div class="button-nav" tabindex="0" aria-label="Go to my Projects section">My Projects</div>
           </a>
           <a onclick="$.scrollify.move('#contact');">
-            <div class="button-nav">Contact me</div>
+            <div class="button-nav" tabindex="0" aria-label="Go to the Contact section">Contact me</div>
           </a>
 
           <div class="social">
@@ -91,13 +91,13 @@
      data-aos-easing="ease"
      data-aos-duration="1000"
      data-aos-once="true">
-          <img id="profile-img" src="images/marion.jpg">
+          <img id="profile-img" src="images/marion.jpg"  alt="Picture of Marion Lotito">
         </div>
         <div class="profile-img" data-aos="fade-down"
      data-aos-easing="ease"
      data-aos-duration="1000"
      data-aos-once="true">
-          <img id="profile-img-mobile" src="images/marion-mobile.jpg">
+          <img id="profile-img-mobile" src="images/marion-mobile.jpg" alt="Picture of Marion Lotito">
         </div>
         <div class="about-content">
           <div class="about-text">
@@ -177,7 +177,7 @@
       <p class="projects-description">Here are a few recent projects, feel free to <a href="mailto:marion.lotito@gmail.com" style="color: #EAC67A">Email me</a> if you want more details.</p>
       <div class="grid-container">
         <div class="img-wrapper" data-aos="flip-left" data-aos-once="true">
-          <img src="images/projects/sbs.png">
+          <img src="images/projects/sbs.png"  alt="Screenshot project SBS Mobilier">
           <div class="text-wrapper">
             <h4>www.sbs-stats.com</h4>
             <p>Technologies: Html5, CSS3, JavaScript, JQuery, Google Chart API</p>
@@ -199,12 +199,12 @@
                   <br>I've worked mainly on the Front-End developmment, and how to connect the Back-end in a clever way.
                   <br>I've used <strong>Flexbox, Google Charts API and Jquery</strong> in order to build and design the app.</p>
                   <h6>Screenshot of the login page</h6>
-      <img src="images/projects/sbs-login.png">
+      <img src="images/projects/sbs-login.png" alt="Screenshot project SBS Mobilier">
               </div>
 
             </div>
         <div class="img-wrapper" data-aos="flip-left" data-aos-once="true">
-          <img src="images/projects/memory-game.png">
+          <img src="images/projects/memory-game.png" alt="Screenshot project Memory Game">
           <div class="text-wrapper">
             <h4>Memory Game</h4>
             <p>Technologies: Html5, CSS3, JavaScript</p>
@@ -212,7 +212,7 @@
           </div>
         </div>
         <div class="img-wrapper" data-aos="flip-left" data-aos-once="true">
-          <img src="images/projects/frogger.png">
+          <img src="images/projects/frogger.png" alt="Screenshot project Classic arcade game clone">
           <div class="text-wrapper">
             <h4>Classic Arcade Game Clone</h4>
             <p>Technologies: Html5, Canvas, CSS3, JavaScript, OOP</p>
@@ -221,7 +221,7 @@
         </div>
 
         <div class="img-wrapper" data-aos="flip-right" data-aos-once="true">
-          <img src="images/projects/joli.png">
+          <img src="images/projects/joli.png" alt="Screenshot project Joli.lu">
           <div class="text-wrapper">
             <h4>www.joli.lu</h4>
             <p>Technologies and skills: Html5, CSS3, Javascript, PHP, Theme customization</p>
@@ -229,7 +229,7 @@
           </div>
         </div>
         <div class="img-wrapper" data-aos="flip-right" data-aos-once="true">
-          <img src="images/projects/reads.png">
+          <img src="images/projects/reads.png" alt="Screenshot project My Reads App">
           <div class="text-wrapper">
             <h4>My Reads App</h4>
             <p>Technologies used: Html5, CSS3, React</p>
@@ -237,7 +237,7 @@
           </div>
         </div>
         <div class="img-wrapper" data-aos="flip-right" data-aos-once="true">
-          <img src="images/projects/restaurant.png">
+          <img src="images/projects/restaurant.png" alt="Screenshot project Restaurant review app">
           <div class="text-wrapper">
             <h4>Restaurant Review app</h4>
             <p>Technologies and skills: Offline first (Progressive Web App), Accessibility, Responsive, Refactoring Code</p>
@@ -260,22 +260,22 @@
         <p>Interested in working together? Contact me right now!</p>
 
         <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" />
+        <input type="text" name="firstname" id="firstname" aria-label="First Name" />
 
 
         <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" />
+        <input type="text" name="lastname" id="lastname" aria-label="Last Name" />
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" aria-label="Email address" />
 
         <label for="type">Type of project</label>
-        <input type="text" name="type" id="type" placeholder="Website, application..." />
+        <input type="text" name="type" id="type" aria-label="Type of project" placeholder="Website, application..." />
 
         <label for="details">Additional details</label>
-        <input type="text" name="details" id="details" />
+        <input type="text" name="details" id="details"  aria-label="Additional details"/>
 
-        <button type="submit" name="submit">Submit</button>
+        <button type="submit" name="submit" aria-label="Submit contact form">Submit</button>
       </form>
 
       <div class="footer">
