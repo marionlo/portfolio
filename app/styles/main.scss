@@ -149,6 +149,13 @@ header {
   transform: scaleX(1);
 }
 
+.button-nav:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .social {
   margin-right: 40px;
   -ms-flex-pack: distribute;
@@ -477,7 +484,7 @@ h3 {
   padding: 20px;
 }
 
-.img-wrapper img {
+.img-wrapper img  {
   display: block;
   opacity: 1;
   -webkit-transition: 0.5s ease;
@@ -512,23 +519,25 @@ h3 {
 
 .text-wrapper button {
   border-radius: 5px;
-  border: 1px solid $secondary;
-  background-color: $secondary;
+  border: 1px solid $primary;
+  background-color: $primary;
   color: white;
   font-weight: bold;
   font-family: 'Barlow', sans-serif;
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 190px;
   margin: 20px auto;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
   text-align: center;
+  font-size:16px;
 }
 
 .text-wrapper p {
   font-size: 18px;
+
 }
 
 .text-wrapper h4 {
@@ -539,17 +548,24 @@ h3 {
   font-weight: bold;
 }
 
-.text-wrapper button:hover {
+.text-wrapper button:hover, .text-wrapper button:focus {
   cursor: pointer;
-  background-color: $secondary-bis;
-  border: 1px solid $secondary-bis;
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: black;
 }
 
-.img-wrapper:hover .text-wrapper {
+.img-wrapper:hover .text-wrapper, .img-wrapper:focus .text-wrapper, .img-wrapper:focus-within .text-wrapper, .img-wrapper:focus .text-wrapper {
   opacity: 0.8;
 }
 
+
+
 .img-wrapper:hover img {
+  opacity: 0.4;
+}
+
+.img-wrapper:focus-within img {
   opacity: 0.4;
 }
 /* The Modal (background) */
@@ -667,8 +683,8 @@ input {
 
 form button {
   border-radius: 5px;
-  border: 1px solid $secondary;
-  background-color: $secondary;
+  border: 1px solid $primary;
+  background-color: $primary;
   color: white;
   font-family: 'Barlow', sans-serif;
   height: 40px;
@@ -681,11 +697,14 @@ form button {
   font-size: 18px;
 }
 
-button:hover {
+button:hover, button:focus {
   cursor: pointer;
-  background-color: $secondary-bis;
-  border: 1px solid$secondary-bis;
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: black;
 }
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
