@@ -1,353 +1,1462 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Hi, I'm Marion, a Front-End Developer! This is my portfolio, get to know me and discover my projects!">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Web,Developer,Front-end,portfolio,Marion Lotito">
-    <meta name="author" content="Marion LOTITO">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Marion Lotito - Front-End Developer</title>
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles/main.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js" type="text/javascript"></script>
- <script src="https://use.fontawesome.com/6a8117da1e.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
- <script src="scripts/scrollify.js"></script>
-
-  </head>
-  <body>
-
-    <header class="scrollable-section" data-section-name="home">
-      <div class="menu">
-        <img src="images/logo.png" class="logo" alt="Logo of the website" tabindex="1">
-        <div class="navigation" role="navigation">
-
-          <a onclick="$.scrollify.move('#about');">
-            <div class="button-nav" tabindex="0" aria-label="Go to About me section">About Me</div>
-          </a>
-          <a onclick="$.scrollify.move('#projects');">
-            <div class="button-nav" tabindex="0" aria-label="Go to my Projects section">My Projects</div>
-          </a>
-          <a onclick="$.scrollify.move('#contact');">
-            <div class="button-nav" tabindex="0" aria-label="Go to the Contact section">Contact me</div>
-          </a>
-
-          <div class="social">
-            <a href="https://www.facebook.com/marion.lotito" target="_blank" aria-label="Go to the Facebook of Marion Lotito"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-label="Go to the Twitter of Marion Lotito" ></i></a>
-            <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-label="Go to the Github of Marion Lotito" ></i></a>
-            <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-label="Go to the Linkedin of Marion Lotito" ></i></a>
-
-            <a class="toggle-nav active" onclick="openNav()">
-        <i class="fas fa-bars" ></i> </a>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="menu-cat" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="-1">&times;</a>
-        <div class="overlay-content">
-          <a onclick="$.scrollify.move('#about'); closeNav()">About Me</a>
-          <a onclick="$.scrollify.move('#projects'); closeNav()">My Projects</a>
-          <a onclick="$.scrollify.move('#contact'); closeNav()">Contact me</a>
-          <div class="overlay-social">
-          <a href="https://www.facebook.com/marion.lotito" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-facebook" ></i></a>
-          <a href="https://twitter.com/dunkyz" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-twitter" ></i></a>
-          <a href="https://github.com/marionlo" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-github" ></i></a>
-          <a href="https://www.linkedin.com/in/marionlotito/" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-linkedin"  ></i></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="typed-center">
-        <span id="typed"></span>
-      </div>
-
-      <div class="scroll" >
-        <i class="fas fa-angle-down" onclick="$.scrollify.move('#about');" tabindex="0"></i>
-      </div>
-    </header>
-
-    <section id="about-section" data-section-name="about" class="scrollable-section" >
-      <h1 data-aos="slide-right" data-aos-offset="200"
-         data-aos-delay="30"
-         data-aos-duration="1000"
-         data-aos-easing="ease-in-out"
-         data-aos-once="true">About me</h1>
-      <div class="aboutme">
-        <div class="profile-img" data-aos="fade-down"
-     data-aos-easing="ease"
-     data-aos-duration="1000"
-     data-aos-once="true">
-          <img id="profile-img" src="images/marion.jpg"  alt="Picture of Marion Lotito">
-        </div>
-        <div class="profile-img" data-aos="fade-down"
-     data-aos-easing="ease"
-     data-aos-duration="1000"
-     data-aos-once="true">
-          <img id="profile-img-mobile" src="images/marion-mobile.jpg" alt="Picture of Marion Lotito">
-        </div>
-        <div class="about-content">
-          <div class="about-text">
-            <h2>alert("Hi!");</h2>
-
-            <p>I'm Marion, nice to meet you!</p>
-            <br>
-            <p>I'm a self-taught <strong>front-end developer</strong> from France, currently based in Luxembourg.
-              <br>I have a serious passion for <strong>web development</strong> and especially solving issues on JavaScript :D
-            </p>
-            <br>
-            <p>Curious and eager to learn, I'm striving to make intuitive, responsive and accessible websites, or web applications.
-              <br>I can help you build your next project!
-            </p>
-            <br>
-            <p>Feel free to take a look at my latest projects right below!</p>
-
-          </div>
-          <div class="about-skills">
-            <div class="about-category">
-              <i class="fas fa-palette" data-aos="fade-down"
-           data-aos-easing="ease"
-           data-aos-duration="1000"
-           data-aos-once="true"></i>
-              <h3>Web Design</h3>
-              <p class="cat-description">I can create a modern and intuitive design that will suits your needs and strengthen your brand.</p>
-            </div>
-            <div class="about-category">
-              <i class="fas fa-code" data-aos="fade-down"
-           data-aos-easing="ease"
-           data-aos-duration="1000"
-           data-aos-once="true"></i>
-              <h3>Front-end development</h3>
-              <p class="cat-description">I'm using the latest technologies in Front-End development, from HTML to React or Angular.</p>
-            </div>
-            <div class="about-category">
-              <i class="fas fa-mobile-alt" data-aos="fade-down"
-           data-aos-easing="ease"
-           data-aos-duration="1000"
-           data-aos-once="true"></i>
-              <h3>Accessible and Responsive</h3>
-              <p class="cat-description">Because each person surfing on the Web is different, I can offer web applications tailored to every user.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="wrapper-skills">
-          <h3 style="text-align: center; margin-top: 40px;">Some tools I use and languages I speak:</h3>
-      <div class="picto-skills" >
-
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-js-square"></i>
-        <i class="fab fa-react"></i>
-        <i class="fab fa-angular"></i>
-
-
-        <i class="fab fa-sass"></i>
-        <i class="fab fa-npm"></i>
-        <i class="fab fa-gulp"></i>
-        <i class="fab fa-git-square"></i>
-        <i class="fab fa-github"></i>
-
-      </div>
-    </div>
-    </section>
-
-
-    <section class="portfolio scrollable-section" data-section-name="projects">
-      <h1 data-aos="slide-right" data-aos-offset="200"
-         data-aos-delay="30"
-         data-aos-duration="1000"
-         data-aos-easing="ease-in-out"
-         data-aos-once="true">My projects</h1>
-      <p class="projects-description">Here are a few recent projects, feel free to <a href="mailto:marion.lotito@gmail.com" style="color: #A38A55; font-weight: bold;">Email me</a> if you want more details.</p>
-      <div class="grid-container">
-        <div class="img-wrapper" data-aos="flip-left" data-aos-once="true" tabindex="0" aria-label="Project SBS Mobilier">
-          <img src="images/projects/sbs.png"  alt="Screenshot project SBS Mobilier">
-          <div class="text-wrapper">
-            <h4>www.sbs-stats.com</h4>
-            <p>Technologies: Html5, CSS3, JavaScript, JQuery, Google Chart API</p>
-            <button id="myBtn" tabindex="0" aria-label="More details about the SBS Mobilier project">More details</button>
-          </div>
-
-          <!-- The Modal -->
+/*
+Theme Name: Portfolio Web Dev
+Author: Marion Lotito
+Author URI: http://www.marion-lotito.com
+Description: Portfolio hardcoded with love
+Version: 2018
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# General
+# Home - First section
+  ## Button next section with pulsing animation
+# About me - Second section
+# My projects - Third section
+  ## Modal description project
+# Contact me - Fourth section
+# Footer
 
 
 
-            </div>
-            <div id="myModal" class="modal">
 
-              <!-- Modal content -->
-              <div class="modal-content">
-                <i class="fas fa-times"></i>
-                <h5>SBS STATS</h5>
-                <p class="modal-desc-sbs">Project created for a company called <a href="https://www.sbsmobilier.fr/" style="color: #A38A55">SBS Mobilier</a>, which needed an app that allows clients to check the statistics of the use of one of their product called "La boîte à Rêves".
-                  <br>I've worked mainly on the Front-End developmment, and how to connect the Back-end in a clever way.
-                  <br>I've used <strong>Flexbox, Google Charts API and Jquery</strong> in order to build and design the app.</p>
-                  <h6>Screenshot of the login page</h6>
-      <img src="images/projects/sbs-login.png" alt="Screenshot project SBS Mobilier">
-              </div>
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,700,900i|Ranga:400,700');
+$background: whitesmoke;
+$primary: #985354;
+$secondary: #EAC67A;
+$secondary-bis: #A38A55;
 
-            </div>
-        <div class="img-wrapper" data-aos="flip-left" data-aos-once="true" tabindex="0" aria-label="Project Memory game">
-          <img src="images/projects/memory-game.png" alt="Screenshot project Memory Game">
-          <div class="text-wrapper">
-            <h4>Memory Game</h4>
-            <p>Technologies: Html5, CSS3, JavaScript</p>
-            <button onclick="window.open('https://github.com/marionlo/memory-game', '_blank')">More details</button>
-          </div>
-        </div>
-        <div class="img-wrapper" data-aos="flip-left" data-aos-once="true" tabindex="0" aria-label="Project Classic Arcade Game">
-          <img src="images/projects/frogger.png" alt="Screenshot project Classic arcade game clone">
-          <div class="text-wrapper">
-            <h4>Classic Arcade Game Clone</h4>
-            <p>Technologies: Html5, Canvas, CSS3, JavaScript, OOP</p>
-              <button onclick="window.open('https://github.com/marionlo/arcade-game', '_blank')">More details</button>
-          </div>
-        </div>
-
-        <div class="img-wrapper" data-aos="flip-right" data-aos-once="true" tabindex="0" aria-label="Project Joli.lu">
-          <img src="images/projects/joli.png" alt="Screenshot project Joli.lu">
-          <div class="text-wrapper">
-            <h4>www.joli.lu</h4>
-            <p>Technologies and skills: Html5, CSS3, Javascript, PHP, Theme customization</p>
-            <button onclick="window.open('http://www.joli.lu/', '_blank')">See the website</button>
-          </div>
-        </div>
-        <div class="img-wrapper" data-aos="flip-right" data-aos-once="true" tabindex="0" aria-label="Project My Reads App">
-          <img src="images/projects/reads.png" alt="Screenshot project My Reads App">
-          <div class="text-wrapper">
-            <h4>My Reads App</h4>
-            <p>Technologies used: Html5, CSS3, React</p>
-            <button onclick="window.open('https://github.com/marionlo/Reads-app', '_blank')">More details</button>
-          </div>
-        </div>
-        <div class="img-wrapper" data-aos="flip-right" data-aos-once="true" tabindex="0" aria-label="Project Restaurant Review">
-          <img src="images/projects/restaurant.png" alt="Screenshot project Restaurant review app">
-          <div class="text-wrapper">
-            <h4>Restaurant Review app</h4>
-            <p>Technologies and skills: Offline first (Progressive Web App), Accessibility, Responsive, Refactoring Code</p>
-            <button onclick="window.open('https://github.com/marionlo/restaurant-reviews', '_blank')">More details</button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- FORM CONTACT -->
-    <section class="scrollable-section contact" data-section-name="contact">
-      <h1 data-aos="slide-right" data-aos-offset="200"
-         data-aos-delay="30"
-         data-aos-duration="1000"
-         data-aos-easing="ease-in-out"
-         data-aos-once="true" style="margin-top:200px;">Contact me</h1>
-      <form method="post" action="contactform.php">
-        <p>Interested in working together? Contact me right now!</p>
-
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" aria-label="First Name" />
-
-
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" aria-label="Last Name" />
-
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" aria-label="Email address" />
-
-        <label for="type">Type of project</label>
-        <input type="text" name="type" id="type" aria-label="Type of project" placeholder="Website, application..." />
-
-        <label for="details">Additional details</label>
-        <input type="text" name="details" id="details"  aria-label="Additional details"/>
-
-        <button type="submit" name="submit" aria-label="Submit contact form">Submit</button>
-      </form>
-
-      <div class="footer">
-        <div class="copyright">
-        Copyright © 2019 Marion Lotito - All rights reserved.
-      </div>
-      <div class="social-footer">
-        <a href="https://www.facebook.com/marion.lotito" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      </div>
-      </div>
-    </section>
-
-
-    <script src="scripts/main.js"></script>
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
-
-    <!-- endbuild -->
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-
-  <!-- Typed script for the message on the first section -->
-    <script>var typed = new Typed('#typed', {
-      strings: ['Hi! I am Marion, a <span id="typed-front"><strong>Front-End Developer</strong></span> from France!'],
-      typeSpeed: 30,
-      backSpeed: 100,
-      fadeOut: true,
-
-    });</script>
-    <!-- endbuild -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-function openNav() {
-  document.getElementById("menu-cat").style.width = "100%";
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-function closeNav() {
-  document.getElementById("menu-cat").style.width = "0%";
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+  color: $primary;
+  letter-spacing: normal;
+  font-weight: bold;
+  font-size: 46px;
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Ranga', cursive;
+}
+/*--------------------------------------------------------------
+# Home - First Section
+--------------------------------------------------------------*/
+.logo {
+  height: 100px;
+  padding-left: 30px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.toggle-nav {
+  display: none;
+}
+
+.fa-bars {
+  cursor: pointer;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5214460784313726)), color-stop(51%, rgba(61, 61, 65, 0.45702030812324934)), to(rgba(0, 0, 0, 1))), url("../images/header.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5214460784313726) 0%, rgba(61, 61, 65, 0.45702030812324934) 51%, rgba(0, 0, 0, 1) 100%), url("../images/header.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5214460784313726) 0%, rgba(61, 61, 65, 0.45702030812324934) 51%, rgba(0, 0, 0, 1) 100%), url("../images/header.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5214460784313726) 0%, rgba(61, 61, 65, 0.45702030812324934) 51%, rgba(0, 0, 0, 1) 100%), url("../images/header.jpg");
+  height: 950px;
+  background-size: cover;
+  width: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 500px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+.button-nav {
+  color: $secondary;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: start;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+}
+
+.button-nav:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: $secondary;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.button-nav:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.button-nav:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.social {
+  margin-right: 40px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.fa {
+  color: #d2d2d3;
+  font-size: 16px;
+  letter-spacing: normal;
+  text-align: start;
+  padding-left: 10px;
+  transition: 0.5s;
+}
+
+.fa:hover {
+  color: $primary;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 
 }
-</script>
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: $background;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color:   $secondary;
+}
+
+.overlay-social {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.typed-center {
+  padding-top: 300px;
+  text-align: center;
+}
+
+#typed {
+  color: whitesmoke;
+  font-size: 50px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.typed-cursor {
+  font-size: 70px;
+  color: whitesmoke;
+}
+
+#typed-front {
+  color: $secondary;
+}
+/* Button next section on Homepage
+	 ========================================================================== */
+.scroll {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.fa-angle-down {
+  color: $background;
+  cursor: pointer;
+  font-size: 60px;
+  -webkit-animation: bounce 1s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation: bounce 1s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+/* pulse animation */
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.4);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.4);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/*--------------------------------------------------------------
+# About me - Second Section
+--------------------------------------------------------------*/
+#about-section {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.aboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 34px;
+  color: $secondary-bis;
+  font-style: italic;
+  padding-bottom: 10px;
+  font-family: 'Barlow', sans-serif;
+}
+
+h3 {
+  color: $secondary-bis;
+  font-style: italic;
+  font-family: 'Barlow', sans-serif;
+  font-size: 24px;
+}
+
+.about-text {
+  color: #6c6c6d;
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+#profile-img {
+  max-width: 100%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#profile-img-mobile {
+  display: none;
+}
+
+.about-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.about-category {
+  text-align: center;
+}
+
+.about-category .fas {
+  font-size: 34px;
+  color: $primary;
+  opacity: 0.8;
+}
+
+.cat-description {
+  color: #a7aaaf;
+  font-size: 18px;
+}
+
+.picto-skills {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.fa-html5 {
+  color: #e34f26;
+}
+
+.fa-css3-alt {
+  color: #425cf4;
+}
+
+.fa-js-square {
+  color: #f7df1e;
+}
+
+.fa-react {
+  color: #00d8ff;
+}
+
+.fa-angular {
+  color: #b52e31;
+}
+
+.fa-npm {
+  color: #cb3837;
+}
+
+.fa-sass {
+  color: #c69;
+}
+
+.fa-gulp {
+  color: #DB4446;
+}
+
+.fa-git-square {
+  color: #3E2C00;
+}
+
+.picto-skills .fa-github {
+  color: #4078c0;
+}
+/*--------------------------------------------------------------
+# My Projects - Third Section
+--------------------------------------------------------------*/
+.portfolio {
+  height: auto;
+}
+
+.projects-description {
+  color: #6c6c6d;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.grid-container img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 4px 23px -7px rgba(0, 0, 0, 0.75);
+}
+
+.grid-container * {
+  position: relative;
+}
+
+.grid-container *:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.img-wrapper {
+  padding: 20px;
+}
+
+.img-wrapper img  {
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.text-wrapper {
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: -35%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 400px;
+  text-align: center;
+}
+
+.text-wrapper button {
+  border-radius: 5px;
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: white;
+  font-weight: bold;
+  font-family: 'Barlow', sans-serif;
+  height: 40px;
+  width: 190px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  font-size:16px;
+}
+
+.text-wrapper p {
+  font-size: 18px;
+
+}
+
+.text-wrapper h4 {
+  font-family: 'Barlow', sans-serif;
+  color: #842d2d;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text-wrapper button:hover, .text-wrapper button:focus {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: black;
+}
+
+.img-wrapper:hover .text-wrapper, .img-wrapper:focus .text-wrapper, .img-wrapper:focus-within .text-wrapper, .img-wrapper:focus .text-wrapper {
+  opacity: 0.8;
+}
 
 
-<script>
-$('.toggle-nav:hidden').attr('aria-hidden', true);
-$('.toggle-nav:visible').attr('aria-hidden', false);
+
+.img-wrapper:hover img {
+  opacity: 0.4;
+}
+
+.img-wrapper:focus-within img {
+  opacity: 0.4;
+}
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0,0,0);
+  /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+}
+
+.modal-content img {
+  margin: 0 auto;
+  width: 40%;
+  opacity: 1;
+}
+/* The Close Button */
+
+.fa-times {
+  color: #aaaaaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.fa-times:focus,
+.fa-times:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 30px;
+  font-family: 'Barlow', sans-serif;
+  color: $secondary-bis;
+}
+
+.modal-desc-sbs {
+  margin-top: 50px;
+  line-height: 35px;
+}
+
+h6 {
+  font-size: 26px;
+  font-family: 'Barlow', sans-serif;
+  color: $secondary-bis;
+  margin-top: 40px;
+}
+/*--------------------------------------------------------------
+# Contact me - Fourth Section
+--------------------------------------------------------------*/
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-family: 'Barlow', sans-serif;
+}
+
+form p {
+  font-weight: bold;
+  color: #6c6c6d;
+  font-size: 20px;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+label {
+  font-size: 16px;
+  color: #5a5b5b;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d5dbe2;
+}
+
+form button {
+  border-radius: 5px;
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: black;
+}
 
 
-</script>
-  </body>
-</html>
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  background-color: #34373d;
+  height: 125px;
+  position: relative;
+  top: 155px;
+}
+
+.copyright {
+  color: $secondary;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.social-footer {
+  text-align: center;
+  padding-top: 10px;
+}
+/*--------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Mobile - Portrait
+--------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Home - First section */
+  .button-nav {
+    display: none;
+  }
+
+  .social .fa {
+    display: none;
+  }
+
+  header {
+    height: 300px;
+  }
+
+  .typed-center {
+    padding-top: 40%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #typed {
+    font-size: 30px;
+  }
+
+  .typed-cursor {
+    font-size: 50px;
+  }
+
+  .scroll {
+    padding-top: 20%;
+  }
+
+  .navigation .social .toggle-nav {
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    display: inline;
+    color: $background;
+    font-size: 30px;
+    transition: color linear 0.15s;
+  }
+  /* About me - Second section */
+  .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #profile-img {
+    display: none;
+  }
+
+  #profile-img-mobile {
+    border-radius: 50%;
+    display: inline;
+    max-height: 170px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-category {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .cat-description {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .picto-skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
+
+  .picto-skills i {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 21%;
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 80px;
+  }
+
+  .wrapper-skills h3 {
+    font-size: 20px;
+  }
+  /* My projects - Third section */
+  .projects-description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .img-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-wrapper {
+    margin-top: -25%;
+  }
+
+  .text-wrapper p {
+    font-size: 1em;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /* Modal Content */
+  .modal {
+    padding-top: 20px;
+  }
+
+  .modal-content {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .modal-content img {
+    width: 80%;
+  }
+  /* The Close Button */
+  .fa-times {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+  /* My projects - Fourth section */
+  form p {
+    padding-top: 10px;
+    text-align: center;
+  }
+  /* Footer */
+  .copyright {
+    margin-top: -80px;
+    padding-top: 30px;
+  }
+}
+/* # Mobile - Portrait
+--------------------------------------------------------------*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Home - First section */
+  .button-nav {
+    display: none;
+  }
+
+  .social .fa {
+    display: none;
+  }
+
+  .navigation .social .toggle-nav {
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    display: inline;
+    color: $background;
+    font-size: 30px;
+    transition: color linear 0.15s;
+    float: right;
+  }
+
+  .typed-center {
+    padding-top: 40%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #typed {
+    font-size: 35px;
+  }
+
+  .typed-cursor {
+    font-size: 45px;
+  }
+
+  .scroll {
+    padding-top: 20%;
+  }
+  /* About me - Second section */
+  .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #profile-img {
+    display: none;
+  }
+
+  #profile-img-mobile {
+    border-radius: 50%;
+    display: inline;
+    max-height: 170px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-category {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .cat-description {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .picto-skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
+
+  .picto-skills i {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 21%;
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 80px;
+  }
+
+  .wrapper-skills h3 {
+    font-size: 20px;
+  }
+  /* My projects - Third section */
+  .projects-description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .img-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-wrapper {
+    margin-top: -25%;
+  }
+
+  .text-wrapper p {
+    font-size: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /* Modal Content */
+  .modal {
+    padding-top: 20px;
+  }
+
+  .modal-content {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .modal-content img {
+    width: 80%;
+  }
+  /* The Close Button */
+  .fa-times {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+  /* My projects - Fourth section */
+  form {
+    width: 80%;
+  }
+
+  form p {
+    padding-top: 10px;
+    text-align: center;
+  }
+  /* Footer */
+  .footer {
+    height: 150px;
+  }
+
+  .copyright {
+    margin-top: 80px;
+    padding-top: 30px;
+  }
+}
+/* # Tablet - Landscape
+--------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Home - First section */
+  header {
+    height: 300px;
+  }
+
+  .typed-center {
+    padding-top: 30%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #typed {
+    font-size: 38px;
+  }
+
+  .typed-cursor {
+    font-size: 38px;
+  }
+
+  .scroll {
+    padding-top: 17%;
+  }
+  /* About me - Second section */
+  .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #profile-img {
+    display: none;
+  }
+
+  #profile-img-mobile {
+    border-radius: 50%;
+    display: inline;
+    max-height: 170px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-category {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .cat-description {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .picto-skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
+
+  .wrapper-skills h3 {
+    font-size: 20px;
+  }
+  /* My projects - Third section */
+  .projects-description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .img-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-wrapper {
+    margin-top: -25%;
+  }
+
+  .text-wrapper p {
+    font-size: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /* Modal Content */
+  .modal {
+    padding-top: 20px;
+  }
+
+  .modal-content {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .modal-content img {
+    width: 80%;
+  }
+  /* The Close Button */
+  .fa-times {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+  /* My projects - Fourth section */
+  form {
+    width: 80%;
+  }
+
+  form p {
+    padding-top: 10px;
+    text-align: center;
+  }
+  /* Footer */
+  .footer {
+    height: 150px;
+  }
+
+  .copyright {
+    margin-top: 80px;
+    padding-top: 30px;
+  }
+}
+/* # Tablets (portrait)
+--------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Home - First section */
+  header {
+    background-size: cover;
+  }
+
+  .typed-center {
+    padding-top: 40%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #typed {
+    font-size: 38px;
+  }
+
+  .typed-cursor {
+    font-size: 38px;
+  }
+
+  .scroll {
+    padding-top: 25%;
+  }
+  /* About me - Second section */
+  .aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #profile-img {
+    display: none;
+  }
+
+  #profile-img-mobile {
+    border-radius: 50%;
+    display: inline;
+    max-height: 170px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-category {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .cat-description {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .picto-skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
+
+  .wrapper-skills h3 {
+    font-size: 20px;
+  }
+  /* My projects - Third section */
+  .projects-description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .img-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-wrapper {
+    margin-top: -25%;
+  }
+
+  .text-wrapper p {
+    font-size: 22px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .text-wrapper button {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+  }
+  /* Modal Content */
+  .modal {
+    padding-top: 20px;
+  }
+
+  .modal-content {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .modal-content img {
+    width: 80%;
+  }
+  /* The Close Button */
+  .fa-times {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+  /* My projects - Fourth section */
+  form {
+    width: 80%;
+  }
+
+  form label {
+    font-size: 18px;
+  }
+
+  form p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  form button {
+    height: 60px;
+    width: 250px;
+    font-size: 24px;
+  }
+  /* Footer */
+  .footer {
+    height: 150px;
+  }
+
+  .copyright {
+    margin-top: 80px;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+
+  .social-footer .fa {
+    font-size: 24px;
+  }
+}
+/* # Laptops - Desktops
+--------------------------------------------------------------*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Home - First section */
+  #typed {
+    font-size: 46px;
+  }
+
+  .typed-center {
+    padding-top: 240px;
+  }
+
+  .typed-cursor {
+    font-size: 50px;
+  }
+
+  .scroll {
+    padding-top: 15%;
+  }
+  /* About - Second section */
+  #about-section {
+    width: 90%;
+  }
+
+  .about-category {
+    max-width: 25%;
+    text-align: center;
+  }
+}
+/* # Large Desktops
+--------------------------------------------------------------*/
+@media (min-width: 1281px) {
+  #about-section {
+    width: 90%;
+  }
+
+  .wrapper-skills {
+    padding-top: 70px;
+  }
+
+  .about-category {
+    max-width: 25%;
+    text-align: center;
+  }
+  /* Footer */
+  .footer {
+    height: 150px;
+  }
+
+  .copyright {
+    margin-top: -20px;
+    padding-top: 30px;
+  }
+}
