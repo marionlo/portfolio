@@ -312,14 +312,14 @@ header {
 
 h2 {
   font-size: 34px;
-  color: $secondary;
+  color: $secondary-bis;
   font-style: italic;
   padding-bottom: 10px;
   font-family: 'Barlow', sans-serif;
 }
 
 h3 {
-  color: $secondary;
+  color: $secondary-bis;
   font-style: italic;
   font-family: 'Barlow', sans-serif;
   font-size: 24px;
@@ -515,6 +515,7 @@ h3 {
   border: 1px solid $secondary;
   background-color: $secondary;
   color: white;
+  font-weight: bold;
   font-family: 'Barlow', sans-serif;
   height: 30px;
   width: 150px;
@@ -696,7 +697,7 @@ button:hover {
 }
 
 .copyright {
-  color: $secondary-bis;
+  color: $secondary;
   font-family: 'Barlow', sans-serif;
   text-align: center;
   padding-top: 40px;
