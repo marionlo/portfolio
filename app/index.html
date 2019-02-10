@@ -29,7 +29,7 @@
 
     <header class="scrollable-section" data-section-name="home">
       <div class="menu">
-        <img src="images/logo.png" class="logo" alt="Logo of the website">
+        <img src="images/logo.png" class="logo" alt="Logo of the website" tabindex="1">
         <div class="navigation" role="navigation">
 
           <a onclick="$.scrollify.move('#about');">
@@ -43,10 +43,10 @@
           </a>
 
           <div class="social">
-            <a href="https://www.facebook.com/marion.lotito" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/marion.lotito" target="_blank" aria-label="Go to the Facebook of Marion Lotito"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-label="Go to the Twitter of Marion Lotito" ></i></a>
+            <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-label="Go to the Github of Marion Lotito" ></i></a>
+            <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-label="Go to the Linkedin of Marion Lotito" ></i></a>
 
             <a class="toggle-nav active" onclick="openNav()">
         <i class="fas fa-bars" ></i> </a>
@@ -56,16 +56,16 @@
       </div>
 
       <div id="menu-cat" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="-1">&times;</a>
         <div class="overlay-content">
           <a onclick="$.scrollify.move('#about'); closeNav()">About Me</a>
           <a onclick="$.scrollify.move('#projects'); closeNav()">My Projects</a>
           <a onclick="$.scrollify.move('#contact'); closeNav()">Contact me</a>
           <div class="overlay-social">
-          <a href="https://www.facebook.com/marion.lotito" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/dunkyz" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://github.com/marionlo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/marionlotito/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/marion.lotito" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-facebook" ></i></a>
+          <a href="https://twitter.com/dunkyz" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-twitter" ></i></a>
+          <a href="https://github.com/marionlo" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-github" ></i></a>
+          <a href="https://www.linkedin.com/in/marionlotito/" target="_blank" aria-hidden="true" tabindex="-1"><i class="fa fa-linkedin"  ></i></a>
           </div>
         </div>
 
@@ -75,8 +75,8 @@
         <span id="typed"></span>
       </div>
 
-      <div class="scroll">
-        <i class="fas fa-angle-down" onclick="$.scrollify.move('#about');"></i>
+      <div class="scroll" >
+        <i class="fas fa-angle-down" onclick="$.scrollify.move('#about');" tabindex="0"></i>
       </div>
     </header>
 
@@ -340,6 +340,14 @@ function closeNav() {
   document.getElementById("menu-cat").style.width = "0%";
 
 }
+</script>
+
+
+<script>
+$('.toggle-nav:hidden').attr('aria-hidden', true);
+$('.toggle-nav:visible').attr('aria-hidden', false);
+
+
 </script>
   </body>
 </html>
