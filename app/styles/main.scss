@@ -1460,3 +1460,11 @@ button:hover, button:focus {
     padding-top: 30px;
   }
 }
+
+/* # Large Desktops & Small height
+--------------------------------------------------------------*/
+@media screen and (min-height: 753px) {
+  .typed-center {
+    padding-top: 13%;
+  }
+}
