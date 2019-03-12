@@ -62,6 +62,7 @@ h1 {
 /*--------------------------------------------------------------
 # Home - First Section
 --------------------------------------------------------------*/
+
 .logo {
   height: 100px;
   padding-left: 30px;
@@ -142,14 +143,8 @@ header {
   transition: all 0.3s ease-in-out 0s;
 }
 
+.button-nav:focus:before,
 .button-nav:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.button-nav:focus:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -175,6 +170,9 @@ header {
   color: $primary;
 }
 
+.social a:focus > .fa {
+  color: $primary;
+}
 
 .overlay {
   height: 100%;
@@ -195,7 +193,6 @@ header {
   width: 100%;
   text-align: center;
   margin-top: 30px;
-
 }
 
 .overlay a {
@@ -210,12 +207,17 @@ header {
   transition: 0.5s;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color:   $secondary;
+.overlay a:focus,
+.overlay a:hover {
+  color: $secondary;
+}
+
+.overlay-social a:focus > .fa {
+  color: $primary;
 }
 
 .overlay-social {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -226,13 +228,15 @@ header {
   right: 45px;
   font-size: 60px;
 }
-
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
+
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
@@ -257,6 +261,7 @@ header {
 }
 /* Button next section on Homepage
 	 ========================================================================== */
+
 .scroll {
   text-align: center;
   padding-top: 300px;
@@ -303,6 +308,7 @@ header {
 /*--------------------------------------------------------------
 # About me - Second Section
 --------------------------------------------------------------*/
+
 #about-section {
   margin: 0 auto;
   max-width: 1400px;
@@ -436,6 +442,7 @@ h3 {
 /*--------------------------------------------------------------
 # My Projects - Third Section
 --------------------------------------------------------------*/
+
 .portfolio {
   height: auto;
 }
@@ -485,7 +492,7 @@ h3 {
   padding: 20px;
 }
 
-.img-wrapper img  {
+.img-wrapper img {
   display: block;
   opacity: 1;
   -webkit-transition: 0.5s ease;
@@ -533,12 +540,11 @@ h3 {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   text-align: center;
-  font-size:16px;
+  font-size: 16px;
 }
 
 .text-wrapper p {
   font-size: 18px;
-
 }
 
 .text-wrapper h4 {
@@ -549,18 +555,20 @@ h3 {
   font-weight: bold;
 }
 
-.text-wrapper button:hover, .text-wrapper button:focus {
+.text-wrapper button:focus,
+.text-wrapper button:hover {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid $primary;
   color: black;
 }
 
-.img-wrapper:hover .text-wrapper, .img-wrapper:focus .text-wrapper, .img-wrapper:focus-within .text-wrapper, .img-wrapper:focus .text-wrapper {
+.img-wrapper:focus .text-wrapper,
+.img-wrapper:focus .text-wrapper,
+.img-wrapper:focus-within .text-wrapper,
+.img-wrapper:hover .text-wrapper {
   opacity: 0.8;
 }
-
-
 
 .img-wrapper:hover img {
   opacity: 0.4;
@@ -570,7 +578,6 @@ h3 {
   opacity: 0.4;
 }
 /* The Modal (background) */
-
 .modal {
   display: none;
   /* Hidden by default */
@@ -594,7 +601,6 @@ h3 {
   /* Black w/ opacity */
 }
 /* Modal Content */
-
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -610,7 +616,6 @@ h3 {
   opacity: 1;
 }
 /* The Close Button */
-
 .fa-times {
   color: #aaaaaa;
   display: -webkit-box;
@@ -647,6 +652,7 @@ h6 {
 /*--------------------------------------------------------------
 # Contact me - Fourth Section
 --------------------------------------------------------------*/
+
 form {
   max-width: 1000px;
   margin: 0 auto;
@@ -698,17 +704,17 @@ form button {
   font-size: 18px;
 }
 
-button:hover, button:focus {
+button:focus,
+button:hover {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid $primary;
   color: black;
 }
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 .footer {
   background-color: #34373d;
   height: 125px;
@@ -726,6 +732,10 @@ button:hover, button:focus {
 .social-footer {
   text-align: center;
   padding-top: 10px;
+}
+
+.social-footer a:focus > .fa {
+  color: $primary;
 }
 /*--------------------------------------------------------------
 # RESPONSIVE
@@ -1460,7 +1470,6 @@ button:hover, button:focus {
     padding-top: 30px;
   }
 }
-
 /* # Large Desktops & Small height
 --------------------------------------------------------------*/
 @media screen and (min-height: 753px) {
