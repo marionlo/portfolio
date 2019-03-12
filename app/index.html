@@ -329,7 +329,7 @@
   </script>
 
 
-  <!-- Toggle nav, and make overlay menu tabbable when it's not hidden -->
+  <!-- Toggle nav, and make overlay menu focusable when it's not hidden, and not focusable when it's hidden -->
   <script>
     $('.toggle-nav:hidden').attr('aria-hidden', true);
     $('.toggle-nav:visible').attr('aria-hidden', false);
@@ -348,6 +348,14 @@
       });
 
     });
+
+    $('.closebtn').click(function() {
+      $('.overlay-social a').removeAttr('tabindex')
+      $('.overlay-content a').removeAttr("tabindex")
+      $('.closebtn').removeAttr("tabindex")
+
+    });
+
   </script>
 </body>
 
