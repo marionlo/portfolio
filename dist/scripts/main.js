@@ -1,0 +1,1 @@
+$(function(){$.scrollify({section:".scrollable-section"})});var modal=document.getElementById("myModal"),btn=document.getElementById("myBtn"),close=document.getElementsByClassName("fa-times")[0];btn.onclick=function(){modal.style.display="block"},close.onclick=function(){modal.style.display="none"},window.onclick=function(l){l.target==modal&&(modal.style.display="none")};
