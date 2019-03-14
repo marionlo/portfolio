@@ -589,7 +589,7 @@ h5 {
 }
 
 .modal-desc-sbs {
-  margin-top: 50px;
+
   line-height: 35px;
 }
 
@@ -938,7 +938,7 @@ button:hover {
   }
   .modal-content {
     padding: 10px;
-    width: 80%;
+    width: 60%;
   }
   .modal-content img {
     width: 80%;
