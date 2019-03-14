@@ -20,7 +20,7 @@
 			}
 		}
 
-		$email_to  =  'marion@marion-lotito.com';
+		$email_to  =  'contact@marion-lotito.com';
 
 		$headers = "From: ".$_POST["inputemail"]."\r\n";
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";
